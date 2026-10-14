@@ -10,27 +10,30 @@
     "retail-pos/retail-pos-candidate-review.json",
     "cms/cms-headless-cms-candidate-review.json",
     "news-media/news-media-candidate-review.json",
-    "hospital-management-ehr/hospital-management-ehr-candidate-review.json"
+    "hospital-management-ehr/hospital-management-ehr-candidate-review.json",
+    "clinic-management/clinic-management-candidate-review.json"
   ],
   "candidate_reviewed_domains": [
     {"domain_id": "financial-systems-fintech", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "business-finance/fintech-candidate-review.md"},
     {"domain_id": "ecommerce", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "commerce/ecommerce-candidate-review.md"},
-    {"domain_id": "retail-pos", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "retail-pos/retail-pos-candidate-review.md", "category_note": "POS-first, ERP POS modules, hospitality-adjacent POS and POS-adjacent infrastructure; scores are not directly interchangeable."},
+    {"domain_id": "retail-pos", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "retail-pos/retail-pos-candidate-review.md", "category_note": "POS-first, ERP POS modules, hospitality-adjacent software and POS-adjacent infrastructure; scores are not directly interchangeable."},
     {"domain_id": "cms-headless-cms", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "cms/cms-headless-cms-candidate-review.md", "category_note": "Traditional editorial, publishing/membership, structured/headless, and data-platform products. Directus is source-available rather than OSI-approved open source under inspected release licenses."},
     {"domain_id": "news-media", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "news-media/news-media-candidate-review.md", "category_note": "Specialist newsroom, publisher, newsletter, video/media portal, podcast and lightweight publishing products. Scores are use-case screening only, not a universal ranking."},
-    {"domain_id": "hospital-management-ehr", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "hospital-management-ehr/hospital-management-ehr-candidate-review.md", "category_note": "Integrated hospital suites, clinical-record platforms, ambulatory EHRs, LIS and interoperability infrastructure are separate product classes; scores are not one interchangeable ranking. No clinical safety, privacy, regulatory or production-readiness assessment is implied."}
+    {"domain_id": "hospital-management-ehr", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "hospital-management-ehr/hospital-management-ehr-candidate-review.md", "category_note": "Integrated hospital suites, clinical-record platforms, ambulatory EHRs, LIS and interoperability infrastructure are separate product classes; scores are not one interchangeable ranking. No clinical safety, privacy, regulatory or production-readiness assessment is implied."},
+    {"domain_id": "clinic-management", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "clinic-management/clinic-management-candidate-review.md", "category_note": "Direct ambulatory practice-management applications, configurable EMR/HMIS foundations, integrated facility suites, an LIS, and developer infrastructure are distinct classes; scores are not a universal product ranking. No clinical-safety, privacy, regulatory, security or production-readiness approval is implied."}
   ],
   "research_queue": [
-    "clinic-management",
     "booking-service-marketplaces"
   ],
   "notes": [
-    "Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, News & Media, and Hospital Management & EHR each have ten source-reviewed candidates with provisional scores.",
-    "Hospital Management & EHR candidates include integrated hospital suites, configurable clinical-record platforms, ambulatory systems, a laboratory system and interoperability/data infrastructure; scores do not imply interchangeability.",
-    "The OpenELIS Global 1.x repository is EOL; its active Global 2 successor is documented separately and must not be conflated with the original repository.",
-    "Healthcare candidates' standards support is release/module-specific and is not conformance certification. Arabic/RTL, security, privacy, legal, clinical-safety and jurisdiction-specific validation remain separate gates before adoption.",
+    "Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, News & Media, Hospital Management & EHR, and Clinic Management each have ten source-reviewed candidates with provisional scores.",
+    "Clinic Management candidates span direct ambulatory systems, configurable EHR/HMIS platforms, integrated facility suites, diagnostic subsystem software, and developer infrastructure; use-case classes and scores are not interchangeable.",
+    "OpenELIS Global is included only as a clinic-adjacent diagnostic/LIS subsystem, not a general practice-management EHR; Medplum is infrastructure for custom clinical software, not a turnkey clinic product.",
+    "Healthcare interoperability support is release-, module- and profile-specific. Arabic/RTL, security, privacy, legal, clinical-safety and jurisdiction-specific validation remain separate gates before adoption.",
+    "Hospital Management & EHR candidates include integrated hospital suites, configurable clinical-record platforms, ambulatory systems, an LIS and interoperability/data infrastructure; scores do not imply interchangeability.",
+    "The OpenELIS Global 1.x repository reviewed under Hospital Management & EHR is EOL; its active Global 2 successor is documented separately and must not be conflated with the original repository.",
     "News & Media candidates cover complementary newsroom, publisher, newsletter, video/media, podcast and lightweight publishing categories; scores are use-case screening only.",
-    "CMS candidates span traditional editorial, headless, publication/membership, and data-platform products; their scores are not directly comparable. Directus is cataloged as a source-available comparison candidate, not an OSI-approved open-source candidate.",
+    "CMS candidates span traditional editorial, headless, publication/membership and data-platform products; their scores are not directly comparable. Directus is cataloged as a source-available comparison candidate, not an OSI-approved open-source candidate.",
     "Other domains remain unresearched and unranked; do not interpret the queue as a ranking.",
     "Every catalog record links to dated evidence notes. Security, legal, operational, localization, and jurisdiction-specific validation remain separate gates before adoption."
   ]

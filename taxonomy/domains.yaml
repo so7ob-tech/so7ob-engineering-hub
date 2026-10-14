@@ -129,7 +129,11 @@ areas:
     name: Clinic Management
     subdomains: [appointments, practice-management, e-prescriptions]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/clinic-management/clinic-management-candidate-review.json
+    scope_note: Candidates span direct ambulatory practice systems, configurable EMR/HMIS platforms, integrated facility suites, an LIS subsystem, and developer infrastructure; aggregate scores are not interchangeable. No clinical-safety, regulatory, security, or adoption approval is implied.
   - id: education-lms
     name: Education & LMS
     subdomains: [lms, student-information-system, virtual-classroom]
