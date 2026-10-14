@@ -87,7 +87,11 @@ areas:
     name: CMS & Headless CMS
     subdomains: [traditional-cms, headless-cms, digital-experience-platform]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/cms/cms-headless-cms-candidate-review.json
+    scope_note: Includes Directus as a source-available comparison candidate; its reviewed licenses are not OSI-approved open source.
   - id: news-media
     name: News & Media
     subdomains: [newsroom, magazine, editorial-workflow]

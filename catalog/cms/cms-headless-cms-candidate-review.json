@@ -1,0 +1,322 @@
+{
+  "schema_version": 1,
+  "domain_id": "cms-headless-cms",
+  "domain_name": "CMS & Headless CMS",
+  "verification_date": "2026-10-14",
+  "status": "candidate_reviewed_provisional",
+  "score_note": "Provisional screening scores use the same 100-point rubric: CMS/content/editorial fit (20), architecture/reuse (15), maintenance (15), security/dependencies (15), docs/tests (10), license clarity (10), setup/deployment (5), APIs/integrations (5), Arabic/RTL (5). They are not measured quality, security, cost, or adoption ratings. Directus is included as a source-available comparison candidate, not an OSI-approved open-source candidate. Joomla's corrected score is the sum of its component points.",
+  "records": [
+    {
+      "id": "cms-wagtail",
+      "name": "Wagtail",
+      "repository_url": "https://github.com/wagtail/wagtail",
+      "official_website": "https://wagtail.org/",
+      "cms_type": "Django editorial CMS with optional decoupled/headless delivery",
+      "license": "BSD 3-Clause.",
+      "technology": [
+        "Python",
+        "Django",
+        "Django REST Framework",
+        "Django Ninja for API v3"
+      ],
+      "content_model": "Typed Django models and StreamField JSON blocks; drafts, revisions, permissions and editorial workflows.",
+      "api_headless": "REST API v2 read-only; v3 authenticated CMS operations/OpenAPI 3.1 is under active development; draft preview is incomplete per supplied docs.",
+      "maintenance_security": "v8.0 published 2026-08-25; quarterly feature-release policy and published 2026 advisories. Check patched versions and Django dependencies.",
+      "arabic_rtl": "Historical Arabic translation/RTL work is evidenced, but current completeness and full RTL behavior remain unverified.",
+      "license_notes": "Permissive commercial reuse subject to retaining notices/disclaimers; review each dependency and plugin separately.",
+      "score": 85,
+      "score_breakdown": "19/20 CMS fit; 14/15 architecture; 14/15 maintenance; 10/15 security; 9/10 docs/tests; 10/10 license; 3/5 operations; 4/5 APIs; 2/5 Arabic/RTL.",
+      "recommendation": "evaluate_with_django_arabic_and_api_prototype",
+      "evidence_note": "../../research-sources/cms-candidates/05-wagtail.md",
+      "sources": [
+        "https://github.com/wagtail/wagtail",
+        "https://docs.wagtail.org/en/stable/advanced_topics/headless.html",
+        "https://docs.wagtail.org/en/stable/topics/streamfield.html",
+        "https://github.com/wagtail/wagtail/security/advisories",
+        "https://github.com/wagtail/wagtail/discussions/7793"
+      ]
+    },
+    {
+      "id": "cms-wordpress",
+      "name": "WordPress",
+      "repository_url": "https://github.com/WordPress/wordpress-develop",
+      "official_website": "https://wordpress.org/",
+      "cms_type": "Traditional editorial/publishing CMS with optional REST-based decoupling",
+      "license": "GitHub API reports GPL-2.0; WordPress.org describes WordPress as GPL-licensed.",
+      "technology": [
+        "PHP",
+        "JavaScript",
+        "MySQL or MariaDB",
+        "themes and plugin/hooks architecture"
+      ],
+      "content_model": "Posts, pages, taxonomies, metadata/custom post types; drafts, schedules, revisions, roles, media and comments via block editor.",
+      "api_headless": "REST API exposes JSON for built-in content; custom routes/content can extend delivery.",
+      "maintenance_security": "7.1.3 announced 2026-10-06 with security fixes; security policy describes supported versions. Assess each plugin/theme independently.",
+      "arabic_rtl": "Translation infrastructure is documented, but Arabic completeness and actual RTL behavior across admin/editor/theme/plugins were not verified.",
+      "license_notes": "Exact LICENSE content could not be extracted in research; verify pinned file and components before redistribution. Hosted offerings, plugins, trademarks and extensions may have separate terms.",
+      "score": 84,
+      "score_breakdown": "19/20 CMS fit; 13/15 architecture; 14/15 maintenance; 10/15 security; 9/10 docs/tests; 8/10 license; 4/5 operations; 5/5 APIs; 2/5 Arabic/RTL.",
+      "recommendation": "evaluate_for_editorial_publishing",
+      "evidence_note": "../../research-sources/cms-candidates/01-wordpress.md",
+      "sources": [
+        "https://github.com/WordPress/wordpress-develop",
+        "https://developer.wordpress.org/rest-api/",
+        "https://wordpress.org/about/requirements/",
+        "https://wordpress.org/news/2026/10/wordpress-7-1-3-maintenance-and-security-release/",
+        "https://github.com/WordPress/wordpress-develop/security/policy"
+      ]
+    },
+    {
+      "id": "cms-strapi",
+      "name": "Strapi",
+      "repository_url": "https://github.com/strapi/strapi",
+      "official_website": "https://strapi.io/",
+      "cms_type": "Structured headless CMS with editorial admin",
+      "license": "Community Edition outside ee/ is MIT Expat subject to root-license conditions; ee/ components have separate supplemental/subscription/cloud terms.",
+      "technology": [
+        "JavaScript/TypeScript",
+        "Node.js",
+        "generated REST",
+        "optional GraphQL plugin"
+      ],
+      "content_model": "Collection/single types, reusable components, dynamic zones, relations, Draft & Publish and i18n; review workflows/content history have paid-plan boundaries in supplied findings.",
+      "api_headless": "Generated REST; optional GraphQL plugin; permissions and operation limits require configuration.",
+      "maintenance_security": "v5.53.0 dated 2026-09-09; stable v5 policy and five 2026 advisories were observed. Map selected version to fixes.",
+      "arabic_rtl": "Localization documented; Arabic availability in target build and genuine RTL admin/editor layout unverified.",
+      "license_notes": "Pin commit/package paths and review exact community-versus-EE entitlement and signed service/subscription terms.",
+      "score": 82,
+      "score_breakdown": "18/20 CMS fit; 14/15 architecture; 14/15 maintenance; 10/15 security; 8/10 docs/tests; 9/10 license; 3/5 operations; 5/5 APIs; 1/5 Arabic/RTL.",
+      "recommendation": "evaluate_in_poc_with_entitlement_review",
+      "evidence_note": "../../research-sources/cms-candidates/06-strapi.md",
+      "sources": [
+        "https://github.com/strapi/strapi",
+        "https://raw.githubusercontent.com/strapi/strapi/main/LICENSE",
+        "https://docs.strapi.io/cms/features/content-type-builder",
+        "https://docs.strapi.io/cms/api/rest",
+        "https://docs.strapi.io/cms/upgrade-tool",
+        "https://github.com/strapi/strapi/security/advisories"
+      ]
+    },
+    {
+      "id": "cms-umbraco",
+      "name": "Umbraco CMS",
+      "repository_url": "https://github.com/umbraco/Umbraco-CMS",
+      "official_website": "https://umbraco.com/",
+      "cms_type": ".NET traditional editorial CMS with optional Content Delivery API",
+      "license": "MIT core; commercial cloud, closed-source add-ons and third-party packages separate.",
+      "technology": [
+        "C#",
+        ".NET",
+        "integrated backoffice",
+        "optional native website rendering"
+      ],
+      "content_model": "Document/content types, properties and block editors; verify exact role/approval workflow requirements.",
+      "api_headless": "Opt-in Content Delivery API with JSON item/route and collection/query endpoints, cultures, filters, sorting, preview and API-key configuration.",
+      "maintenance_security": "Active release activity through 2026-10-14, including 13.x and 17.x; multiple advisories through 2026-10-06, including protected-content exposure. Verify fixed releases and support branch.",
+      "arabic_rtl": "No verified native Arabic RTL backoffice evidence.",
+      "license_notes": "Core MIT grant does not extend to separate paid cloud, commercial products, or closed-source add-ons.",
+      "score": 81,
+      "score_breakdown": "18/20 CMS fit; 13/15 architecture; 14/15 maintenance; 10/15 security; 9/10 docs/tests; 10/10 license; 3/5 operations; 4/5 APIs; 0/5 Arabic/RTL.",
+      "recommendation": "evaluate_for_dotnet_editorial_use",
+      "evidence_note": "../../research-sources/cms-candidates/08-umbraco.md",
+      "sources": [
+        "https://github.com/umbraco/Umbraco-CMS",
+        "https://github.com/umbraco/Umbraco-CMS/blob/main/LICENSE.md",
+        "https://docs.umbraco.com/umbraco-cms/develop-with-umbraco/headless-and-apis/content-delivery-api",
+        "https://github.com/umbraco/Umbraco-CMS/security",
+        "https://api.github.com/repos/umbraco/Umbraco-CMS/releases?per_page=5"
+      ]
+    },
+    {
+      "id": "cms-drupal",
+      "name": "Drupal",
+      "repository_url": "https://github.com/drupal/drupal",
+      "official_website": "https://www.drupal.org/",
+      "cms_type": "Structured traditional editorial CMS with optional JSON:API/REST decoupling",
+      "license": "GPL-2.0-or-later.",
+      "technology": [
+        "PHP",
+        "Composer",
+        "content entities/bundles",
+        "JSON:API and REST"
+      ],
+      "content_model": "Content types, fields, taxonomy, references, Views, multilingual setup, revisions, Content Moderation and Workflows.",
+      "api_headless": "Core JSON:API provides collections, filters, includes, pagination, sorting, revisions and CRUD; advanced translation/business rules require validation.",
+      "maintenance_security": "Drupal 11.4.6 and 10.6.16 production-ready releases listed; 10.6 security support stated to end December 2026. Core and contributed advisories must be monitored separately.",
+      "arabic_rtl": "Arabic/current RTL editor and theme behavior unverified; found RTL instructions targeted unsupported Drupal 7.",
+      "license_notes": "GPL commercial use is generally permitted; review contributed modules, themes, assets and service contracts individually.",
+      "score": 80,
+      "score_breakdown": "18/20 CMS fit; 13/15 architecture; 13/15 maintenance; 10/15 security; 8/10 docs/tests; 9/10 license; 3/5 operations; 5/5 APIs; 1/5 Arabic/RTL.",
+      "recommendation": "evaluate_for_structured_multilingual_editorial",
+      "evidence_note": "../../research-sources/cms-candidates/02-drupal.md",
+      "sources": [
+        "https://github.com/drupal/drupal",
+        "https://www.drupal.org/project/drupal/releases",
+        "https://www.drupal.org/docs/core-modules-and-themes/core-modules/jsonapi-module",
+        "https://www.drupal.org/docs/8/core/modules/content-moderation/overview",
+        "https://www.drupal.org/security"
+      ]
+    },
+    {
+      "id": "cms-ghost",
+      "name": "Ghost",
+      "repository_url": "https://github.com/TryGhost/Ghost",
+      "official_website": "https://ghost.org/",
+      "cms_type": "Publishing/membership CMS with decoupled Admin and Content APIs",
+      "license": "MIT core; service contracts and trademark/logo rights are separate.",
+      "technology": [
+        "Node.js/JavaScript",
+        "MySQL 8 production",
+        "NGINX",
+        "systemd"
+      ],
+      "content_model": "Posts/pages, authors, tags, members, newsletters, subscriptions and free/paid access tiers; schema-first modeling not established.",
+      "api_headless": "Read-only Content API and authenticated read/write Admin API support decoupled delivery/management.",
+      "maintenance_security": "Active commits 2026-10-14/13; release-page order was ambiguous. CVE-2026-105679 affected versions through 6.64.0 and was fixed in 6.64.0; confirm exact release and support status.",
+      "arabic_rtl": "No verified end-to-end Arabic/RTL support across editor, theme, member portal and email.",
+      "license_notes": "MIT code license retains notices; official Ghost name/logo are trademarks. Ghost(Pro) service terms were not assessed.",
+      "score": 79,
+      "score_breakdown": "16/20 CMS fit; 14/15 architecture; 14/15 maintenance; 9/15 security; 8/10 docs/tests; 10/10 license; 3/5 operations; 4/5 APIs; 1/5 Arabic/RTL.",
+      "recommendation": "evaluate_for_publication_and_membership",
+      "evidence_note": "../../research-sources/cms-candidates/04-ghost.md",
+      "sources": [
+        "https://github.com/TryGhost/Ghost",
+        "https://raw.githubusercontent.com/TryGhost/Ghost/main/LICENSE",
+        "https://docs.ghost.org/content-api",
+        "https://docs.ghost.org/admin-api",
+        "https://docs.ghost.org/hosting",
+        "https://github.com/TryGhost/Ghost/security/advisories",
+        "https://www.cve.org/CVERecord?id=CVE-2026-105679"
+      ]
+    },
+    {
+      "id": "cms-directus",
+      "name": "Directus",
+      "repository_url": "https://github.com/directus/directus",
+      "official_website": "https://directus.com/",
+      "cms_type": "SQL data platform and headless CMS; source-available, not OSI-approved open source",
+      "license": "Current main LICENSE is Monospace Sustainable Core License 1.0 (MSCL-1.0-GPL); historical v11.15.1 uses BSL 1.1.",
+      "technology": [
+        "JavaScript/TypeScript",
+        "Node.js",
+        "Vue-based Studio",
+        "SQL",
+        "REST and GraphQL"
+      ],
+      "content_model": "SQL collections/tables, fields, relations, assets, permissions and workflows; editorial approvals, scheduling, localization and preview need a proof of concept.",
+      "api_headless": "Generated REST/GraphQL APIs and Studio overlay for existing/new SQL databases; custom frontend is separate.",
+      "maintenance_security": "Release page showed v12.4.1/v12.4.0 as of 2026-10-14; multiple 2026 high/critical advisories require exact version-to-fix mapping.",
+      "arabic_rtl": "Native Arabic Studio localization and genuine RTL layout were not verified.",
+      "license_notes": "Check exact tag and grant/contract: MSCL competitive-use restrictions and key terms are material; historical BSL contains version-specific terms and change date. Do not treat as OSI-approved open source or transfer one release's terms to another.",
+      "score": 77,
+      "score_breakdown": "17/20 CMS fit; 14/15 architecture; 14/15 maintenance; 10/15 security; 8/10 docs/tests; 5/10 license; 4/5 operations; 5/5 APIs; 0/5 Arabic/RTL.",
+      "recommendation": "evaluate_only_after_exact_release_license_review",
+      "evidence_note": "../../research-sources/cms-candidates/10-directus.md",
+      "sources": [
+        "https://github.com/directus/directus",
+        "https://raw.githubusercontent.com/directus/directus/main/license",
+        "https://raw.githubusercontent.com/directus/directus/v11.15.1/license",
+        "https://github.com/directus/directus/releases",
+        "https://github.com/directus/directus/security/advisories",
+        "https://opensource.org/licenses"
+      ]
+    },
+    {
+      "id": "cms-payload",
+      "name": "Payload CMS",
+      "repository_url": "https://github.com/payloadcms/payload",
+      "official_website": "https://payloadcms.com/",
+      "cms_type": "Headless CMS embedded in Next.js, with optional decoupled frontend",
+      "license": "MIT core; review transitive dependencies, plugins and service contracts separately.",
+      "technology": [
+        "TypeScript",
+        "Next.js App Router/React",
+        "Node.js 20.9+",
+        "Lexical editor",
+        "MongoDB/Postgres/SQLite"
+      ],
+      "content_model": "Collections, globals, typed fields, access rules, hooks, drafts/versions, preview, custom admin UI and localized content.",
+      "api_headless": "Generated REST, GraphQL, typed Local API and SDK; locale/fallback support.",
+      "maintenance_security": "Release list shows v4 canary and v3.90.2 stable-era line; ten advisories listed 2026-10-14. Confirm stable line and affected/fixed ranges.",
+      "arabic_rtl": "Locale-level `rtl` option documented; Arabic UI language availability/quality and full RTL behavior need testing.",
+      "license_notes": "MIT rights subject to notice retention; commercial cloud/support terms are separate from code license.",
+      "score": 76,
+      "score_breakdown": "16/20 CMS fit; 14/15 architecture; 12/15 maintenance; 9/15 security; 8/10 docs/tests; 9/10 license; 3/5 operations; 4/5 APIs; 1/5 Arabic/RTL.",
+      "recommendation": "evaluate_for_typescript_nextjs_poc",
+      "evidence_note": "../../research-sources/cms-candidates/07-payload.md",
+      "sources": [
+        "https://github.com/payloadcms/payload",
+        "https://github.com/payloadcms/payload/blob/main/LICENSE.md",
+        "https://payloadcms.com/docs/configuration/localization",
+        "https://payloadcms.com/docs/rest-api/overview",
+        "https://github.com/payloadcms/payload/releases",
+        "https://github.com/payloadcms/payload/security/advisories"
+      ]
+    },
+    {
+      "id": "cms-keystone",
+      "name": "KeystoneJS 6",
+      "repository_url": "https://github.com/keystonejs/keystone",
+      "official_website": "https://keystonejs.com/",
+      "cms_type": "Developer-led schema-driven GraphQL CMS/application framework",
+      "license": "MIT.",
+      "technology": [
+        "Node.js",
+        "TypeScript/JavaScript",
+        "GraphQL/Apollo",
+        "React/Next.js Admin UI",
+        "Prisma",
+        "PostgreSQL/MySQL/SQLite"
+      ],
+      "content_model": "Code-defined lists, fields, access rules, hooks, generated Admin UI; basic publishing can be composed, but a complete editorial workflow is not established.",
+      "api_headless": "GraphQL is the main generated CRUD API; no first-party REST delivery API was verified.",
+      "maintenance_security": "Commits through 2026-09-14, but formal release page displayed packages through 2025; advisories include maxTake/filter bypasses. Verify package version and patches.",
+      "arabic_rtl": "No positive official evidence for Arabic Admin UI localization or full RTL support.",
+      "license_notes": "MIT rights subject to notice retention; independently assess dependencies and hosting terms.",
+      "score": 76,
+      "score_breakdown": "15/20 CMS fit; 13/15 architecture; 12/15 maintenance; 9/15 security; 8/10 docs/tests; 10/10 license; 3/5 operations; 5/5 APIs; 1/5 Arabic/RTL.",
+      "recommendation": "evaluate_for_developer_led_graphql_case",
+      "evidence_note": "../../research-sources/cms-candidates/09-keystone.md",
+      "sources": [
+        "https://github.com/keystonejs/keystone",
+        "https://raw.githubusercontent.com/keystonejs/keystone/main/LICENSE",
+        "https://keystonejs.com/docs/config/lists",
+        "https://keystonejs.com/docs/graphql/overview",
+        "https://github.com/keystonejs/keystone/releases",
+        "https://github.com/keystonejs/keystone/security/advisories",
+        "https://github.com/keystonejs/keystone/security/policy"
+      ]
+    },
+    {
+      "id": "cms-joomla",
+      "name": "Joomla CMS",
+      "repository_url": "https://github.com/joomla/joomla-cms",
+      "official_website": "https://www.joomla.org/",
+      "cms_type": "Traditional integrated PHP editorial CMS with optional Web Services API",
+      "license": "Exact checked LICENSE.txt is GPLv2; README states GPLv2-or-later.",
+      "technology": [
+        "PHP",
+        "JavaScript/Node.js build tooling",
+        "Composer",
+        "MySQL/MariaDB/PostgreSQL"
+      ],
+      "content_model": "Articles/categories, tags, custom fields, language associations, access levels, publishing states/schedules and version history.",
+      "api_headless": "Web Services API supports JSON content endpoints and GET/POST/PATCH/DELETE; opened guide targets 4.4, so validate on 6.2.",
+      "maintenance_security": "Stable 6.2.0 published 2026-10-13; multiple 2026 advisories and fixes for access control, authentication, XSS, upload and CORS.",
+      "arabic_rtl": "Official language packs and RTL calendar fixes are positive signals; complete Arabic editing/theme/extensions remain untested.",
+      "license_notes": "Review extensions, assets and dependencies individually; service and trademark boundaries are separate.",
+      "score": 74,
+      "score_breakdown": "17/20 CMS fit; 12/15 architecture; 12/15 maintenance; 9/15 security; 8/10 docs/tests; 9/10 license; 3/5 operations; 2/5 APIs; 2/5 Arabic/RTL. Correct sum: 74/100.",
+      "recommendation": "evaluate_for_multilingual_traditional_cms",
+      "evidence_note": "../../research-sources/cms-candidates/03-joomla.md",
+      "sources": [
+        "https://github.com/joomla/joomla-cms",
+        "https://raw.githubusercontent.com/joomla/joomla-cms/5.4-dev/LICENSE.txt",
+        "https://manual.joomla.org/docs/next/general-concepts/multilingual/",
+        "https://manual.joomla.org/docs/4.4/general-concepts/webservices/",
+        "https://developer.joomla.org/security-centre.html",
+        "https://api.github.com/repos/joomla/joomla-cms/releases"
+      ]
+    }
+  ]
+}
