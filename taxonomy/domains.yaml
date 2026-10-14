@@ -1,0 +1,201 @@
+schema_version: 1
+as_of: 2026-10-14
+status_policy: "A domain marked queued has not been researched or ranked yet."
+research_waves:
+  wave_1:
+    - financial-systems-fintech
+    - ecommerce
+    - retail-pos
+    - cms-headless-cms
+    - news-media
+    - hospital-management-ehr
+    - clinic-management
+    - booking-service-marketplaces
+  wave_2:
+    - erp
+    - crm
+    - hr-payroll
+    - corporate-websites
+    - blogs-publishing
+    - digital-portals
+    - community-social
+    - education-lms
+  wave_3:
+    - restaurant-food-delivery
+    - hotel-travel-management
+    - logistics-delivery
+    - real-estate-property
+    - warehouse-inventory
+    - project-task-management
+    - helpdesk-customer-support
+    - analytics-business-intelligence
+  wave_4:
+    - events-ticketing
+    - document-management-workflow
+    - design-systems
+    - identity-access-management
+    - search-platforms
+    - observability-platforms
+    - developer-platforms-api-management
+    - cybersecurity-tools
+areas:
+  - id: financial-systems-fintech
+    name: Financial Systems & FinTech
+    subdomains: [accounting, invoicing, expense-management, digital-wallets, payments, treasury]
+    priority: wave_1
+    status: queued
+  - id: ecommerce
+    name: E-commerce
+    subdomains: [storefront, multi-vendor-marketplace, catalog, checkout, order-management]
+    priority: wave_1
+    status: queued
+  - id: retail-pos
+    name: Retail & POS
+    subdomains: [point-of-sale, inventory, multi-store, pricing, customer-loyalty]
+    priority: wave_1
+    status: queued
+  - id: erp
+    name: ERP
+    subdomains: [finance, procurement, operations, manufacturing, human-capital]
+    priority: wave_2
+    status: queued
+  - id: crm
+    name: CRM
+    subdomains: [sales-pipeline, marketing-automation, customer-service]
+    priority: wave_2
+    status: queued
+  - id: hr-payroll
+    name: HR & Payroll
+    subdomains: [hris, payroll, attendance, recruitment]
+    priority: wave_2
+    status: queued
+  - id: corporate-websites
+    name: Corporate Websites
+    subdomains: [marketing-site, corporate-portal]
+    priority: wave_2
+    status: queued
+  - id: cms-headless-cms
+    name: CMS & Headless CMS
+    subdomains: [traditional-cms, headless-cms, digital-experience-platform]
+    priority: wave_1
+    status: queued
+  - id: news-media
+    name: News & Media
+    subdomains: [newsroom, magazine, editorial-workflow]
+    priority: wave_1
+    status: queued
+  - id: blogs-publishing
+    name: Blogs & Publishing
+    subdomains: [blog-engine, newsletter, creator-publishing]
+    priority: wave_2
+    status: queued
+  - id: digital-portals
+    name: Digital Portals
+    subdomains: [self-service, public-information, partner-portal]
+    priority: wave_2
+    status: queued
+  - id: community-social
+    name: Community & Social Platforms
+    subdomains: [forum, social-network, community-platform]
+    priority: wave_2
+    status: queued
+  - id: hospital-management-ehr
+    name: Hospital Management & EHR
+    subdomains: [ehr, hospital-information-system, clinical-workflow]
+    priority: wave_1
+    status: queued
+  - id: clinic-management
+    name: Clinic Management
+    subdomains: [appointments, practice-management, e-prescriptions]
+    priority: wave_1
+    status: queued
+  - id: education-lms
+    name: Education & LMS
+    subdomains: [lms, student-information-system, virtual-classroom]
+    priority: wave_2
+    status: queued
+  - id: booking-service-marketplaces
+    name: Booking & Service Marketplaces
+    subdomains: [appointments, field-services, marketplace]
+    priority: wave_1
+    status: queued
+  - id: restaurant-food-delivery
+    name: Restaurant & Food Delivery
+    subdomains: [restaurant-pos, online-ordering, delivery-management]
+    priority: wave_3
+    status: queued
+  - id: hotel-travel-management
+    name: Hotel & Travel Management
+    subdomains: [property-management, reservation-engine, travel-booking]
+    priority: wave_3
+    status: queued
+  - id: logistics-delivery
+    name: Logistics & Delivery
+    subdomains: [fleet-management, last-mile, shipment-tracking]
+    priority: wave_3
+    status: queued
+  - id: real-estate-property
+    name: Real Estate & Property Management
+    subdomains: [listing-platform, property-management, leasing]
+    priority: wave_3
+    status: queued
+  - id: warehouse-inventory
+    name: Warehouse & Inventory Management
+    subdomains: [wms, inventory-control, fulfillment]
+    priority: wave_3
+    status: queued
+  - id: project-task-management
+    name: Project & Task Management
+    subdomains: [project-management, task-tracking, portfolio-management]
+    priority: wave_3
+    status: queued
+  - id: helpdesk-customer-support
+    name: Helpdesk & Customer Support
+    subdomains: [ticketing, knowledge-base, customer-support]
+    priority: wave_3
+    status: queued
+  - id: analytics-business-intelligence
+    name: Analytics & Business Intelligence
+    subdomains: [bi, dashboards, data-visualization]
+    priority: wave_3
+    status: queued
+  - id: events-ticketing
+    name: Events & Ticketing
+    subdomains: [event-management, ticketing, registration]
+    priority: wave_4
+    status: queued
+  - id: document-management-workflow
+    name: Document Management & Workflow
+    subdomains: [document-management, e-signature, workflow-automation]
+    priority: wave_4
+    status: queued
+  - id: design-systems
+    name: Design Systems & Component Libraries
+    subdomains: [react, vue, angular, web-components, tokens]
+    priority: wave_4
+    status: queued
+  - id: identity-access-management
+    name: Identity & Access Management
+    subdomains: [authentication, authorization, identity-provider]
+    priority: wave_4
+    status: queued
+  - id: search-platforms
+    name: Search Platforms
+    subdomains: [site-search, enterprise-search, vector-search]
+    priority: wave_4
+    status: queued
+  - id: observability-platforms
+    name: Observability Platforms
+    subdomains: [metrics, logs, traces, error-tracking]
+    priority: wave_4
+    status: queued
+  - id: developer-platforms-api-management
+    name: Developer Platforms & API Management
+    subdomains: [api-gateway, developer-portal, integration-platform]
+    priority: wave_4
+    status: queued
+  - id: cybersecurity-tools
+    name: Cybersecurity Tools
+    subdomains: [vulnerability-management, security-testing, secrets-management]
+    priority: wave_4
+    status: queued

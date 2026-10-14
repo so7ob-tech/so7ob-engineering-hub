@@ -1,0 +1,72 @@
+schema_version: 1
+id: ""
+name: ""
+canonical_url: ""
+official_website: null
+domain_id: ""
+subdomains: []
+description: ""
+project_type: "full_system" # full_system | framework | component | starter_kit
+license:
+  spdx_id: null
+  declared_by_project: null
+  file_url: null
+  commercial_reuse: "unknown"
+  review_notes: null
+technology:
+  frontend: []
+  backend: []
+  languages: []
+  databases: []
+  orm: []
+  api_styles: []
+  authentication: "unknown"
+  authorization_rbac: "unknown"
+  multi_tenancy: "unknown"
+  docker: "unknown"
+  deployment: []
+  integrations: []
+  i18n: "unknown"
+  arabic_rtl: "unknown"
+maintenance:
+  stars: null
+  stars_checked_at: null
+  last_commit_at: null
+  latest_release: null
+  latest_release_at: null
+  status: "unknown" # active | maintenance | stale | archived | unknown
+  docs_quality: "unknown"
+  tests: "unknown"
+  security_concerns: []
+  scalability_notes: ""
+  setup_difficulty: "unknown"
+  technical_debt_indicators: []
+assessment:
+  feature_fit: null
+  architecture_reuse: null
+  maintenance: null
+  security_dependencies: null
+  docs_tests: null
+  license_clarity: null
+  operations: null
+  integrations_api: null
+  i18n_rtl: null
+  score: null
+  confidence: "low" # low | medium | high
+  recommendation: "evaluate" # adopt | evaluate | reference_only | avoid
+  rationale: ""
+  strengths: []
+  limitations: []
+  use_cases: []
+  reusable_modules: []
+  architecture_patterns: []
+  design_system_quality: "unknown"
+  integration_complexity: "unknown"
+  alternatives: []
+evidence:
+  verification_date: null
+  sources: [] # each: {url, source_type, checked_at, claim, confidence}
+review:
+  reviewer: null
+  reviewed_at: null
+  status: "draft" # draft | evidence_reviewed | security_reviewed | approved | rejected

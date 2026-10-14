@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "dataset_name": "So7ob Engineering Knowledge Hub catalog",
+  "created_at": "2026-10-14",
+  "status": "foundation_only",
+  "records": [],
+  "research_queue": [
+    "financial-systems-fintech",
+    "ecommerce",
+    "retail-pos",
+    "cms-headless-cms",
+    "news-media",
+    "hospital-management-ehr",
+    "clinic-management",
+    "booking-service-marketplaces"
+  ],
+  "notes": [
+    "No repository candidates have been verified or scored in this initial dataset.",
+    "Do not interpret the queue as a ranking or as a complete market survey.",
+    "Each record must include dated evidence sources and license review notes."
+  ]
+}
