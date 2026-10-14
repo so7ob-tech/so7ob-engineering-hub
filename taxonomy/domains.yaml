@@ -143,7 +143,11 @@ areas:
     name: Booking & Service Marketplaces
     subdomains: [appointments, field-services, marketplace]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 6
+    review_date: 2026-10-14
+    catalog_file: catalog/booking-service-marketplaces/booking-service-marketplaces-candidate-review.json
+    scope_note: Only six suitable projects were evidenced without padding. Product classes include single-provider appointment booking, resource reservation, an actual but legacy service/rental marketplace, and field-service operations. No mature fully open-source end-to-end service marketplace was established; scores and recommendations are class-specific, and all are reference_only pending fit, licensing, security, and operations gates.
   - id: restaurant-food-delivery
     name: Restaurant & Food Delivery
     subdomains: [restaurant-pos, online-ordering, delivery-management]

@@ -11,7 +11,8 @@
     "cms/cms-headless-cms-candidate-review.json",
     "news-media/news-media-candidate-review.json",
     "hospital-management-ehr/hospital-management-ehr-candidate-review.json",
-    "clinic-management/clinic-management-candidate-review.json"
+    "clinic-management/clinic-management-candidate-review.json",
+    "booking-service-marketplaces/booking-service-marketplaces-candidate-review.json"
   ],
   "candidate_reviewed_domains": [
     {"domain_id": "financial-systems-fintech", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "business-finance/fintech-candidate-review.md"},
@@ -20,13 +21,14 @@
     {"domain_id": "cms-headless-cms", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "cms/cms-headless-cms-candidate-review.md", "category_note": "Traditional editorial, publishing/membership, structured/headless, and data-platform products. Directus is source-available rather than OSI-approved open source under inspected release licenses."},
     {"domain_id": "news-media", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "news-media/news-media-candidate-review.md", "category_note": "Specialist newsroom, publisher, newsletter, video/media portal, podcast and lightweight publishing products. Scores are use-case screening only, not a universal ranking."},
     {"domain_id": "hospital-management-ehr", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "hospital-management-ehr/hospital-management-ehr-candidate-review.md", "category_note": "Integrated hospital suites, clinical-record platforms, ambulatory EHRs, LIS and interoperability infrastructure are separate product classes; scores are not one interchangeable ranking. No clinical safety, privacy, regulatory or production-readiness assessment is implied."},
-    {"domain_id": "clinic-management", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "clinic-management/clinic-management-candidate-review.md", "category_note": "Direct ambulatory practice-management applications, configurable EMR/HMIS foundations, integrated facility suites, an LIS, and developer infrastructure are distinct classes; scores are not a universal product ranking. No clinical-safety, privacy, regulatory, security or production-readiness approval is implied."}
+    {"domain_id": "clinic-management", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "clinic-management/clinic-management-candidate-review.md", "category_note": "Direct ambulatory practice-management applications, configurable EMR/HMIS foundations, integrated facility suites, an LIS, and developer infrastructure are distinct classes; scores are not a universal product ranking. No clinical-safety, privacy, regulatory, security or production-readiness approval is implied."},
+    {"domain_id": "booking-service-marketplaces", "record_count": 6, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "booking-service-marketplaces/booking-service-marketplaces-candidate-review.md", "category_note": "Six candidates span individual-provider appointments, resource reservation, legacy service/rental marketplace software, and field-service operations. The niche lacks a mature fully open-source end-to-end marketplace in this evidence set; all candidates are reference_only and scores are class-specific."}
   ],
   "research_queue": [
-    "booking-service-marketplaces"
+    "erp"
   ],
   "notes": [
-    "Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, News & Media, Hospital Management & EHR, and Clinic Management each have ten source-reviewed candidates with provisional scores.",
+    "Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, News & Media, Hospital Management & EHR, and Clinic Management each have ten source-reviewed candidates with provisional scores. Booking & Service Marketplaces has six suitable, source-reviewed candidates; the narrower count avoids padding.",
     "Clinic Management candidates span direct ambulatory systems, configurable EHR/HMIS platforms, integrated facility suites, diagnostic subsystem software, and developer infrastructure; use-case classes and scores are not interchangeable.",
     "OpenELIS Global is included only as a clinic-adjacent diagnostic/LIS subsystem, not a general practice-management EHR; Medplum is infrastructure for custom clinical software, not a turnkey clinic product.",
     "Healthcare interoperability support is release-, module- and profile-specific. Arabic/RTL, security, privacy, legal, clinical-safety and jurisdiction-specific validation remain separate gates before adoption.",
