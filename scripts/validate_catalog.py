@@ -12,9 +12,19 @@ try:
     dataset = json.loads((ROOT / "catalog/dataset.json").read_text(encoding="utf-8"))
     assert dataset.get("schema_version") == 1
     assert isinstance(dataset.get("records"), list)
-    ids = [record.get("id") for record in dataset["records"]]
+    all_records = list(dataset["records"])
+    for relative_path in dataset.get("domain_files", []):
+        domain_path = ROOT / "catalog" / relative_path
+        domain_data = json.loads(domain_path.read_text(encoding="utf-8"))
+        if domain_data.get("schema_version") != 1 or not isinstance(domain_data.get("records"), list):
+            errors.append(f"{domain_path.relative_to(ROOT)}: invalid schema_version or records")
+            continue
+        all_records.extend(domain_data["records"])
+    ids = [record.get("id") for record in all_records]
+    if any(not record_id for record_id in ids):
+        errors.append("catalog: every record must have an id")
     if len(ids) != len(set(ids)):
-        errors.append("catalog/dataset.json: duplicate record IDs")
+        errors.append("catalog: duplicate record IDs across registered datasets")
 except Exception as exc:
     errors.append(f"catalog/dataset.json: {exc}")
 

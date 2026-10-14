@@ -43,7 +43,10 @@ areas:
     name: Financial Systems & FinTech
     subdomains: [accounting, invoicing, expense-management, digital-wallets, payments, treasury]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/business-finance/financial-systems-fintech.json
   - id: ecommerce
     name: E-commerce
     subdomains: [storefront, multi-vendor-marketplace, catalog, checkout, order-management]

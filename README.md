@@ -2,7 +2,7 @@
 
 A versioned, evidence-first engineering knowledge base and reusable-assets program for So7ob Tech. This repository separates **verified facts**, **engineering recommendations**, and **unverified hypotheses** so teams can reuse knowledge without confusing a shortlist with due diligence.
 
-> Current state: **Foundation initialized; research catalog not yet populated.** No repository candidates have been scored or approved for adoption in this initial commit.
+> Current state: **Foundation plus first-domain research.** Financial Systems & FinTech has ten source-reviewed candidates with provisional scores; no project is approved for adoption. Other domains remain queued.
 
 ## Contents
 
@@ -22,7 +22,7 @@ A versioned, evidence-first engineering knowledge base and reusable-assets progr
 ## Start here
 
 1. Read `docs/operating-model.md` and `evaluations/scoring-rubric.md`.
-2. Browse the domain queue in `taxonomy/domains.yaml`.
+2. Browse the domain queue in `taxonomy/domains.yaml`; for current FinTech candidates see `catalog/business-finance/financial-systems-fintech.json` and `catalog/business-finance/fintech-candidate-review.md`.
 3. Add candidates from primary sources using `templates/repository-card.yaml`.
 4. Validate with `python3 scripts/validate_catalog.py`.
 5. Treat every recommendation as conditional on customer requirements, jurisdiction, security review, and license review.

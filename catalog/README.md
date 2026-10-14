@@ -1,10 +1,10 @@
 # Research catalog
 
-Catalog records live in domain-specific folders and follow `templates/repository-card.yaml`. Current research state: **no candidates have been independently verified or scored yet**. Domain folders are prepared for the wave-one and subsequent research queue.
+Catalog records live in domain-specific folders and follow `templates/repository-card.yaml`. Current research state is partial: **Financial Systems & FinTech has ten source-reviewed candidates with provisional scores**; the other domains remain queued. The first domain's cross-candidate report is [`fintech-candidate-review.md`](business-finance/fintech-candidate-review.md), its importable records are [`financial-systems-fintech.json`](business-finance/financial-systems-fintech.json), and individual evidence notes are in `research-sources/fintech-candidates/`.
 
 | Domain | Queue status | Record count |
 |---|---|---:|
-| Financial Systems & FinTech | queued | 0 |
+| Financial Systems & FinTech | candidate review complete; scores provisional | 10 |
 | E-commerce | queued | 0 |
 | Retail & POS | queued | 0 |
 | CMS & Headless CMS | queued | 0 |
