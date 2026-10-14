@@ -2,7 +2,7 @@
 
 A versioned, evidence-first engineering knowledge base and reusable-assets program for So7ob Tech. This repository separates **verified facts**, **engineering recommendations**, and **unverified hypotheses** so teams can reuse knowledge without confusing a shortlist with due diligence.
 
-> Current state: **Foundation plus four domain reviews.** Financial Systems & FinTech, E-commerce, Retail & POS, and CMS & Headless CMS each have ten source-reviewed candidates with provisional scores; no project is approved for adoption. News & Media is next in the priority queue.
+> Current state: **Foundation plus five domain reviews.** Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, and News & Media each have ten source-reviewed candidates with provisional scores; no project is approved for adoption. Hospital Management & EHR is next in the priority queue.
 
 ## Contents
 
@@ -22,7 +22,7 @@ A versioned, evidence-first engineering knowledge base and reusable-assets progr
 ## Start here
 
 1. Read `docs/operating-model.md` and `evaluations/scoring-rubric.md`.
-2. Browse the domain queue in `taxonomy/domains.yaml`; review `catalog/business-finance/`, `catalog/commerce/`, `catalog/retail-pos/`, and `catalog/cms/` for candidate records and reports.
+2. Browse the domain queue in `taxonomy/domains.yaml`; review `catalog/business-finance/`, `catalog/commerce/`, `catalog/retail-pos/`, `catalog/cms/`, and `catalog/news-media/` for candidate records and reports.
 3. Add candidates from primary sources using `templates/repository-card.yaml`.
 4. Validate with `python3 scripts/validate_catalog.py`.
 5. Treat every recommendation as conditional on customer requirements, jurisdiction, security review, and license review.

@@ -96,7 +96,11 @@ areas:
     name: News & Media
     subdomains: [newsroom, magazine, editorial-workflow]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/news-media/news-media-candidate-review.json
+    scope_note: Candidates cover distinct newsroom, publisher, newsletter, video/media, podcast, and lightweight publishing classes; scores are not a universal ranking.
   - id: blogs-publishing
     name: Blogs & Publishing
     subdomains: [blog-engine, newsletter, creator-publishing]

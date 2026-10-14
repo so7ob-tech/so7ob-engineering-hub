@@ -8,22 +8,24 @@
     "business-finance/financial-systems-fintech.json",
     "commerce/ecommerce-candidate-review.json",
     "retail-pos/retail-pos-candidate-review.json",
-    "cms/cms-headless-cms-candidate-review.json"
+    "cms/cms-headless-cms-candidate-review.json",
+    "news-media/news-media-candidate-review.json"
   ],
   "candidate_reviewed_domains": [
     {"domain_id": "financial-systems-fintech", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "business-finance/fintech-candidate-review.md"},
     {"domain_id": "ecommerce", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "commerce/ecommerce-candidate-review.md"},
     {"domain_id": "retail-pos", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "retail-pos/retail-pos-candidate-review.md", "category_note": "POS-first, ERP POS modules, hospitality-adjacent POS and POS-adjacent infrastructure; scores are not directly interchangeable."},
-    {"domain_id": "cms-headless-cms", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "cms/cms-headless-cms-candidate-review.md", "category_note": "Traditional editorial, publishing/membership, structured/headless, and data-platform products. Directus is source-available rather than OSI-approved open source under inspected release licenses."}
+    {"domain_id": "cms-headless-cms", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "cms/cms-headless-cms-candidate-review.md", "category_note": "Traditional editorial, publishing/membership, structured/headless, and data-platform products. Directus is source-available rather than OSI-approved open source under inspected release licenses."},
+    {"domain_id": "news-media", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "news-media/news-media-candidate-review.md", "category_note": "Specialist newsroom, publisher CMS, newsletter, video/media portal, podcast and lightweight publishing products. Scores are use-case screening only, not a universal ranking."}
   ],
   "research_queue": [
-    "news-media",
     "hospital-management-ehr",
     "clinic-management",
     "booking-service-marketplaces"
   ],
   "notes": [
-    "Financial Systems & FinTech, E-commerce, Retail & POS, and CMS & Headless CMS each have ten primary-source-reviewed candidates; assessments and scores are provisional.",
+    "Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, and News & Media each have ten primary-source-reviewed candidates; assessments and scores are provisional.",
+    "News & Media candidates cover complementary newsroom, publisher, newsletter, video/media, podcast and lightweight publishing categories; scores should not be read as interchangeable product rankings.",
     "CMS candidates span traditional editorial, headless, publication/membership, and data-platform products; their scores are not directly comparable.",
     "Directus is cataloged as a source-available comparison candidate, not an OSI-approved open-source candidate; its license must be checked by exact release.",
     "Other domains remain unresearched and unranked; do not interpret the queue as a ranking.",

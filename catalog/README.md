@@ -1,6 +1,6 @@
 # Research catalog
 
-Catalog records live in domain-specific folders. Current research state is partial: **Financial Systems & FinTech, E-commerce, Retail & POS, and CMS & Headless CMS each have ten source-reviewed candidates with provisional scores**; the remaining domains are queued. These candidates span materially different products and license models; scores are screening judgments, not adoption approval. Retail & POS mixes POS-first products, ERP modules, hospitality-adjacent software and POS-adjacent infrastructure. CMS includes Directus as a source-available comparison candidate whose reviewed licenses are not OSI-approved open source.
+Catalog records live in domain-specific folders. Current research state is partial: **Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, and News & Media each have ten source-reviewed candidates with provisional scores**; the remaining domains are queued. These candidates span materially different products and license models; scores are screening judgments, not adoption approval. Retail & POS mixes POS-first products, ERP modules, hospitality-adjacent software and POS-adjacent infrastructure. CMS includes Directus as a source-available comparison candidate whose reviewed licenses are not OSI-approved open source. News & Media spans newsroom, publishing, newsletter, video, podcast and lightweight writing products; its scores are for screening within use cases, not a universal ranking.
 
 | Domain | Queue status | Record count |
 |---|---|---:|
@@ -8,7 +8,7 @@ Catalog records live in domain-specific folders. Current research state is parti
 | E-commerce | candidate review complete; scores provisional | 10 |
 | Retail & POS | candidate review complete; provisional scores, mixed categories | 10 |
 | CMS & Headless CMS | candidate review complete; provisional scores; mixed license models | 10 |
-| News & Media | queued | 0 |
+| News & Media | candidate review complete; provisional scores; distinct product classes | 10 |
 | Hospital Management & EHR | queued | 0 |
 | Clinic Management | queued | 0 |
 | Booking & Service Marketplaces | queued | 0 |
@@ -20,6 +20,8 @@ E-commerce: [candidate report](commerce/ecommerce-candidate-review.md), [JSON re
 Retail & POS: [candidate report](retail-pos/retail-pos-candidate-review.md), [JSON records](retail-pos/retail-pos-candidate-review.json), evidence notes in `research-sources/retail-pos-candidates/`.
 
 CMS & Headless CMS: [candidate report](cms/cms-headless-cms-candidate-review.md), [JSON records](cms/cms-headless-cms-candidate-review.json), evidence notes in `research-sources/cms-candidates/`.
+
+News & Media: [candidate report](news-media/news-media-candidate-review.md), [JSON records](news-media/news-media-candidate-review.json), evidence notes in `research-sources/news-media-candidates/`.
 
 For each domain, aim for up to ten qualifying entries only after verification. Include fewer with a documented reason if fewer suitable projects are confirmed. The queue is not a ranking.
 
