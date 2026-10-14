@@ -5,19 +5,14 @@
   "status": "partial_research",
   "records": [],
   "domain_files": [
-    "business-finance/financial-systems-fintech.json"
+    "business-finance/financial-systems-fintech.json",
+    "commerce/ecommerce-candidate-review.json"
   ],
   "candidate_reviewed_domains": [
-    {
-      "domain_id": "financial-systems-fintech",
-      "record_count": 10,
-      "review_date": "2026-10-14",
-      "ranking_status": "provisional_not_final",
-      "report": "business-finance/fintech-candidate-review.md"
-    }
+    {"domain_id": "financial-systems-fintech", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "business-finance/fintech-candidate-review.md"},
+    {"domain_id": "ecommerce", "record_count": 10, "review_date": "2026-10-14", "ranking_status": "provisional_not_final", "report": "commerce/ecommerce-candidate-review.md"}
   ],
   "research_queue": [
-    "ecommerce",
     "retail-pos",
     "cms-headless-cms",
     "news-media",
@@ -26,8 +21,8 @@
     "booking-service-marketplaces"
   ],
   "notes": [
-    "Financial Systems & FinTech has ten candidates reviewed from primary sources; assessments and scores remain provisional.",
+    "Financial Systems & FinTech and E-commerce each have ten primary-source-reviewed candidates; assessments and scores are provisional.",
     "Other domains remain unresearched and unranked; do not interpret the queue as a ranking.",
-    "Each catalog record links to dated evidence notes and requires separate security, legal, operational, localization and jurisdictional validation before adoption."
+    "Every catalog record links to dated evidence notes. Security, legal, operational, localization, and jurisdictional validation remain separate gates before adoption."
   ]
 }

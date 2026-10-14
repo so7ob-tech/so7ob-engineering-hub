@@ -1,17 +1,21 @@
 # Research catalog
 
-Catalog records live in domain-specific folders and follow `templates/repository-card.yaml`. Current research state is partial: **Financial Systems & FinTech has ten source-reviewed candidates with provisional scores**; the other domains remain queued. The first domain's cross-candidate report is [`fintech-candidate-review.md`](business-finance/fintech-candidate-review.md), its importable records are [`financial-systems-fintech.json`](business-finance/financial-systems-fintech.json), and individual evidence notes are in `research-sources/fintech-candidates/`.
+Catalog records live in domain-specific folders. Current research state is partial: **Financial Systems & FinTech and E-commerce each have ten source-reviewed candidates with provisional scores**; the remaining domains are queued. Domain reports, importable records, and individual dated source notes are linked below.
 
 | Domain | Queue status | Record count |
 |---|---|---:|
 | Financial Systems & FinTech | candidate review complete; scores provisional | 10 |
-| E-commerce | queued | 0 |
+| E-commerce | candidate review complete; scores provisional | 10 |
 | Retail & POS | queued | 0 |
 | CMS & Headless CMS | queued | 0 |
 | News & Media | queued | 0 |
 | Hospital Management & EHR | queued | 0 |
 | Clinic Management | queued | 0 |
 | Booking & Service Marketplaces | queued | 0 |
+
+FinTech: [candidate report](business-finance/fintech-candidate-review.md), [JSON records](business-finance/financial-systems-fintech.json), evidence notes in `research-sources/fintech-candidates/`.
+
+E-commerce: [candidate report](commerce/ecommerce-candidate-review.md), [JSON records](commerce/ecommerce-candidate-review.json), evidence notes in `research-sources/ecommerce-candidates/`.
 
 For each domain, aim for up to ten qualifying entries only after verification. Include fewer with a documented reason if fewer suitable projects are confirmed. The queue is not a ranking.
 

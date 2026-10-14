@@ -51,7 +51,10 @@ areas:
     name: E-commerce
     subdomains: [storefront, multi-vendor-marketplace, catalog, checkout, order-management]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/commerce/ecommerce-candidate-review.json
   - id: retail-pos
     name: Retail & POS
     subdomains: [point-of-sale, inventory, multi-store, pricing, customer-loyalty]

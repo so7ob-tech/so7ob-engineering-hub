@@ -1,0 +1,507 @@
+{
+  "schema_version": 1,
+  "domain_id": "ecommerce",
+  "domain_name": "E-commerce",
+  "verification_date": "2026-10-14",
+  "status": "candidate_reviewed_provisional",
+  "ranking_note": "Screening scores are the sums of the stated rubric criteria, recalculated while integrating the reviews. They compare unlike solutions and are not an adoption recommendation or definitive market ranking.",
+  "records": [
+    {
+      "id": "ecommerce-bagisto",
+      "name": "Bagisto",
+      "repository_url": "https://github.com/bagisto/bagisto",
+      "official_website": "https://bagisto.com/en/",
+      "subdomains": [
+        "storefront",
+        "multi-vendor-marketplace",
+        "headless-commerce"
+      ],
+      "project_type": "full_system",
+      "description": "Modular Laravel commerce platform with marketplace features, REST API package, storefront/admin and localization tooling.",
+      "license": {
+        "spdx": "MIT",
+        "commercial_reuse": "Commercial use/modification permitted with MIT notice retention; separately review extensions, dependencies, themes and service terms."
+      },
+      "technologies": [
+        "PHP 8.4+",
+        "Laravel 13",
+        "Vue 3",
+        "Tailwind CSS 4",
+        "Vite 6",
+        "MySQL 8",
+        "MariaDB 10.11",
+        "PostgreSQL 16"
+      ],
+      "headless_api": "REST admin/shop API package with Sanctum and Swagger; GraphQL reference in docs.",
+      "multi_vendor": "Explicit project and official-site claims: seller management, commissions, product approvals, order handling and vendor dashboard. Confirm core/package boundary and release applicability.",
+      "arabic_rtl": "Strongest candidate evidence in this batch: `ar` locale listed and official localization docs identify RTL support. Full translations and end-to-end UI behavior remain untested.",
+      "maintenance": {
+        "stars": null,
+        "last_commit": "2026-10-13 activity shown",
+        "latest_release": "v2.5.0-beta2 (beta)"
+      },
+      "security_flags": [
+        "Multiple advisories, including critical/high issues; exact patch status for selected version unknown."
+      ],
+      "score": 79,
+      "recommendation": "evaluate",
+      "confidence": "medium; strongest RTL signal, but beta release and advisory status need attention",
+      "evidence_note": "../../research-sources/ecommerce-candidates/10-bagisto.md",
+      "sources": [
+        "https://github.com/bagisto/bagisto",
+        "https://raw.githubusercontent.com/bagisto/bagisto/master/LICENSE",
+        "https://devdocs.bagisto.com/getting-started/installation.html",
+        "https://devdocs.bagisto.com/api/rest-api",
+        "https://devdocs.bagisto.com/package-development/localization.html",
+        "https://github.com/bagisto/bagisto/security/advisories",
+        "https://github.com/bagisto/bagisto/releases"
+      ],
+      "score_note": "Recalculated from the nine criterion-point values in the evidence note during integration."
+    },
+    {
+      "id": "ecommerce-medusa",
+      "name": "Medusa",
+      "repository_url": "https://github.com/medusajs/medusa",
+      "official_website": "https://medusajs.com/",
+      "subdomains": [
+        "headless-commerce",
+        "storefront",
+        "multi-vendor-marketplace"
+      ],
+      "project_type": "framework",
+      "description": "Open-core headless commerce platform and TypeScript framework with modular commerce functions, workflows, providers and customizable admin.",
+      "license": {
+        "spdx": "MIT core; Enterprise Edition materials separately licensed",
+        "commercial_reuse": "MIT terms apply to core files; exclude or separately license Enterprise materials and inspect dependencies."
+      },
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "Express",
+        "Vite",
+        "PostgreSQL",
+        "Redis integration"
+      ],
+      "headless_api": "REST routes and modules consumed by storefront/admin clients; separate optional Next.js storefront.",
+      "multi_vendor": "Marketplace is a stated use case; built-in seller tenancy/onboarding/commissions/payouts not verified.",
+      "arabic_rtl": "Unknown; Finnish/Swedish admin translations were evidenced, not Arabic/RTL.",
+      "maintenance": {
+        "stars": 36748,
+        "last_commit": "2026-10-14",
+        "latest_release": "v2.21.2 (2026-09-28)"
+      },
+      "security_flags": [
+        "Security policy and API hardening in release notes; no independent audit or full advisory/dependency review."
+      ],
+      "score": 78,
+      "recommendation": "evaluate",
+      "confidence": "moderate for feature, architecture and dated release facts; RTL and security posture remain uncertain",
+      "evidence_note": "../../research-sources/ecommerce-candidates/02-medusa.md",
+      "sources": [
+        "https://github.com/medusajs/medusa",
+        "https://github.com/medusajs/medusa/blob/develop/LICENSE",
+        "https://github.com/medusajs/medusa/blob/develop/ENTERPRISE-LICENSE.md",
+        "https://docs.medusajs.com/learn/introduction/architecture",
+        "https://docs.medusajs.com/resources/commerce-modules",
+        "https://github.com/medusajs/medusa/releases",
+        "https://github.com/medusajs/medusa/security"
+      ]
+    },
+    {
+      "id": "ecommerce-vendure",
+      "name": "Vendure",
+      "repository_url": "https://github.com/vendure-ecommerce/vendure",
+      "official_website": "https://vendure.io/core",
+      "subdomains": [
+        "headless-commerce",
+        "storefront",
+        "marketplace"
+      ],
+      "project_type": "framework",
+      "description": "TypeScript/NestJS headless commerce framework with separate Shop/Admin GraphQL APIs, worker, plugins and SQL database support.",
+      "license": {
+        "spdx": "GPLv3 stated on repository; exact LICENSE file not independently read",
+        "commercial_reuse": "Project describes a plugin exception and commercial Platform; obtain counsel's review of exact file, modifications, plugins and distribution/deployment model."
+      },
+      "technologies": [
+        "TypeScript",
+        "Node.js",
+        "NestJS",
+        "GraphQL",
+        "React",
+        "TypeORM",
+        "PostgreSQL",
+        "MySQL/MariaDB",
+        "SQLite"
+      ],
+      "headless_api": "Separate GraphQL Shop and Admin APIs; plugin extension points.",
+      "multi_vendor": "Marketplace use case and Seller entity are documented; complete seller onboarding, roles, commissions and payouts are not established.",
+      "arabic_rtl": "Localized content/channel language selection documented; Arabic UI and RTL unknown.",
+      "maintenance": {
+        "stars": 8516,
+        "last_push": "2026-10-14",
+        "latest_release": "v3.7.4 (date not exposed)"
+      },
+      "security_flags": [
+        "Multiple 2026 high/critical advisories; v3.7.4 says it fixes two issues. Confirm exact affected/fixed versions and supported branch."
+      ],
+      "score": 78,
+      "recommendation": "evaluate",
+      "confidence": "moderate for features and maintenance; license file and exact advisory remediation require verification",
+      "evidence_note": "../../research-sources/ecommerce-candidates/03-vendure.md",
+      "sources": [
+        "https://github.com/vendure-ecommerce/vendure",
+        "https://github.com/vendure-ecommerce/vendure/blob/master/LICENSE",
+        "https://docs.vendure.io/current/core/developer-guide/overview",
+        "https://docs.vendure.io/current/core/developer-guide/plugins",
+        "https://github.com/vendure-ecommerce/vendure/releases",
+        "https://github.com/vendure-ecommerce/vendure/security/advisories"
+      ]
+    },
+    {
+      "id": "ecommerce-saleor",
+      "name": "Saleor",
+      "repository_url": "https://github.com/saleor/saleor",
+      "official_website": "https://saleor.io/",
+      "subdomains": [
+        "headless-commerce",
+        "storefront",
+        "multichannel"
+      ],
+      "project_type": "full_system",
+      "description": "API-only, GraphQL-only headless commerce backend with separate dashboard/storefront projects and extension mechanisms.",
+      "license": {
+        "spdx": "BSD-3-Clause",
+        "commercial_reuse": "Commercial reuse/modification generally permitted subject to notices/disclaimer and endorsement restrictions; review dependencies and trademarks separately."
+      },
+      "technologies": [
+        "Python",
+        "GraphQL",
+        "Docker",
+        "separate Next.js/React storefront example"
+      ],
+      "headless_api": "GraphQL-only/API-only backend with webhooks, apps and API extensions.",
+      "multi_vendor": "Unknown; channels and multiple warehouses do not establish seller tenancy.",
+      "arabic_rtl": "Unknown; translatable catalog claim only, Arabic/RTL not verified.",
+      "maintenance": {
+        "stars": null,
+        "last_commit": "2026-09-24",
+        "latest_release": "3.23.36; maintained 3.22/3.21 lines shown"
+      },
+      "security_flags": [
+        "Security policy supports versions >=3.19; release notes include dependency fixes. No audit or full advisory assessment."
+      ],
+      "score": 77,
+      "recommendation": "evaluate",
+      "confidence": "moderate for platform/license/release; database version, tests, seller model and RTL unknown",
+      "evidence_note": "../../research-sources/ecommerce-candidates/01-saleor.md",
+      "sources": [
+        "https://github.com/saleor/saleor",
+        "https://raw.githubusercontent.com/saleor/saleor/main/LICENSE",
+        "https://docs.saleor.io/setup/docker-compose",
+        "https://github.com/saleor/saleor/releases",
+        "https://github.com/saleor/saleor/security",
+        "https://github.com/saleor/saleor/commits/main/"
+      ]
+    },
+    {
+      "id": "ecommerce-sylius",
+      "name": "Sylius",
+      "repository_url": "https://github.com/Sylius/Sylius",
+      "official_website": "https://sylius.com/",
+      "subdomains": [
+        "headless-commerce",
+        "multichannel",
+        "b2b"
+      ],
+      "project_type": "framework",
+      "description": "Symfony-based modular commerce framework, headless/API-first capable with configurable channels, locales and replaceable frontend.",
+      "license": {
+        "spdx": "MIT",
+        "commercial_reuse": "Commercial reuse subject to MIT notice retention; separately review dependencies, plugins and Sylius Plus boundaries."
+      },
+      "technologies": [
+        "PHP",
+        "Symfony",
+        "Doctrine",
+        "API Platform",
+        "MySQL",
+        "MariaDB",
+        "PostgreSQL",
+        "PHPUnit",
+        "Behat"
+      ],
+      "headless_api": "REST API built on API Platform; supports independent frontends.",
+      "multi_vendor": "Unknown for Community Edition; multi-channel storefronts are not proof of seller marketplace support.",
+      "arabic_rtl": "General locale/content support evidenced; Arabic and RTL unverified.",
+      "maintenance": {
+        "stars": 8556,
+        "last_push": "2026-10-14",
+        "releases": [
+          "v2.3.1",
+          "v2.2.11"
+        ]
+      },
+      "security_flags": [
+        "Multiple 2026 advisories, including high-severity JWT and Host-header issues; verify fixed versions."
+      ],
+      "score": 76,
+      "recommendation": "evaluate",
+      "confidence": "moderate for documented scope/license; security remediation and RTL remain unknown",
+      "evidence_note": "../../research-sources/ecommerce-candidates/04-sylius.md",
+      "sources": [
+        "https://github.com/Sylius/Sylius",
+        "https://raw.githubusercontent.com/Sylius/Sylius/master/LICENSE",
+        "https://docs.sylius.com/public/getting-started/sylius-ce-installation",
+        "https://github.com/Sylius/Sylius/releases",
+        "https://github.com/Sylius/Sylius/security/advisories"
+      ],
+      "score_note": "Recalculated from the nine criterion-point values in the evidence note during integration."
+    },
+    {
+      "id": "ecommerce-spree",
+      "name": "Spree Commerce",
+      "repository_url": "https://github.com/spree/spree",
+      "official_website": "https://spreecommerce.org/",
+      "subdomains": [
+        "headless-commerce",
+        "multi-vendor-marketplace",
+        "b2b"
+      ],
+      "project_type": "full_system",
+      "description": "Self-hostable Rails commerce platform with REST APIs/SDKs, React admin, Seller Panel and optional Next.js storefront.",
+      "license": {
+        "spdx": "BSD-3-Clause",
+        "commercial_reuse": "Commercial reuse permitted subject to retaining notices/disclaimer and endorsement restrictions; review separately distributed integrations."
+      },
+      "technologies": [
+        "Ruby",
+        "Ruby on Rails",
+        "TypeScript SDKs",
+        "React",
+        "Next.js",
+        "Docker"
+      ],
+      "headless_api": "REST Store/Admin/Seller APIs, SDKs and OpenAPI 3.0.",
+      "multi_vendor": "Explicit open-source core claims for seller onboarding, order splitting, commissions, payout ledger/Stripe Connect and Seller Panel; validate implementation in a POC.",
+      "arabic_rtl": "General market-language/translations references; Arabic and RTL unknown.",
+      "maintenance": {
+        "stars": 15756,
+        "last_push": "2026-10-14",
+        "latest_stable": "v5.6.1 (2026-07-28); v6.0 RC activity also observed"
+      },
+      "security_flags": [
+        "Multiple 2026 advisories including high-severity access-control/IDOR; supported-version matrix not extracted."
+      ],
+      "score": 76,
+      "recommendation": "evaluate",
+      "confidence": "moderate; marketplace claim strong but database, security and RTL need further checking",
+      "evidence_note": "../../research-sources/ecommerce-candidates/06-spree.md",
+      "sources": [
+        "https://github.com/spree/spree",
+        "https://github.com/spree/spree/blob/main/LICENSE",
+        "https://spreecommerce.org/docs/user/what-is-spree-commerce",
+        "https://spreecommerce.org/docs/api-reference",
+        "https://spreecommerce.org/docs/developer/security/security_policy",
+        "https://github.com/spree/spree/security/advisories"
+      ]
+    },
+    {
+      "id": "ecommerce-woocommerce",
+      "name": "WooCommerce",
+      "repository_url": "https://github.com/woocommerce/woocommerce/",
+      "official_website": "https://woocommerce.com/",
+      "subdomains": [
+        "wordpress-plugin-storefront",
+        "headless-commerce"
+      ],
+      "project_type": "component",
+      "description": "WordPress-coupled commerce plugin with store-management documentation, extensions and REST API v3.",
+      "license": {
+        "spdx": "GPL-3.0 declared in WordPress plugin readme; root LICENSE unavailable and GitHub API reports NOASSERTION",
+        "commercial_reuse": "Review GPL obligations and each extension/theme separately; confirm root licensing with project before reuse."
+      },
+      "technologies": [
+        "PHP",
+        "WordPress",
+        "JavaScript",
+        "Composer",
+        "Node.js",
+        "pnpm"
+      ],
+      "headless_api": "REST API v3 over WordPress REST API; client libraries documented.",
+      "multi_vendor": "Separate marketplace plugin documented; core support not evidenced.",
+      "arabic_rtl": "General localization docs; Arabic/RTL not verified.",
+      "maintenance": {
+        "stars": 10549,
+        "latest_release": "11.2.1 (2026-10-09)",
+        "commit_activity": "through 2026-10-14"
+      },
+      "security_flags": [
+        "Security policy generally supports latest release with possible critical backports; no audit or dependency review."
+      ],
+      "score": 76,
+      "recommendation": "evaluate",
+      "confidence": "high for REST and declared plugin license; low for exact root license and RTL",
+      "evidence_note": "../../research-sources/ecommerce-candidates/07-woocommerce.md",
+      "sources": [
+        "https://github.com/woocommerce/woocommerce/",
+        "https://wordpress.org/plugins/woocommerce/",
+        "https://developer.woocommerce.com/docs/apis/rest-api/",
+        "https://woocommerce.com/document/woocommerce-localization/",
+        "https://woocommerce.com/document/multi-vendor-marketplace/",
+        "https://github.com/woocommerce/woocommerce/security/policy"
+      ]
+    },
+    {
+      "id": "ecommerce-shopware",
+      "name": "Shopware",
+      "repository_url": "https://github.com/shopware/shopware",
+      "official_website": "https://www.shopware.com/",
+      "subdomains": [
+        "storefront",
+        "headless-commerce",
+        "digital-commerce"
+      ],
+      "project_type": "full_system",
+      "description": "PHP/Symfony/Vue digital commerce platform with Community Edition and extension/app model; API-first/headless capable.",
+      "license": {
+        "spdx": "MIT repository license",
+        "commercial_reuse": "MIT applies to covered repo code with notice retention; review paid features, hosted boundaries, third-party apps and dependencies."
+      },
+      "technologies": [
+        "PHP",
+        "Symfony",
+        "Vue 3",
+        "Docker",
+        "Composer",
+        "MySQL/MariaDB (release-specific evidence)"
+      ],
+      "headless_api": "API-first/headless positioning and Store API/SDK references; integrations not tested.",
+      "multi_vendor": "Unknown; no native seller workflow verified.",
+      "arabic_rtl": "Markets/language translation claims only; Arabic/RTL unverified.",
+      "maintenance": {
+        "stars": 3447,
+        "last_push": "2026-10-14",
+        "release": "v6.7.15.1 listed; exact date unavailable"
+      },
+      "security_flags": [
+        "Multiple 2026 critical/high advisories; verify exact patched release."
+      ],
+      "score": 73,
+      "recommendation": "evaluate",
+      "confidence": "moderate for core facts; lower for security and RTL completeness",
+      "evidence_note": "../../research-sources/ecommerce-candidates/05-shopware.md",
+      "sources": [
+        "https://github.com/shopware/shopware",
+        "https://github.com/shopware/shopware/blob/trunk/LICENSE",
+        "https://developer.shopware.com/",
+        "https://github.com/shopware/shopware/releases",
+        "https://github.com/shopware/shopware/security",
+        "https://github.com/shopware/shopware/blob/trunk/SECURITY.md"
+      ]
+    },
+    {
+      "id": "ecommerce-magento-open-source",
+      "name": "Magento Open Source",
+      "repository_url": "https://github.com/magento/magento2",
+      "official_website": "https://business.adobe.com/products/magento/open-source.html",
+      "subdomains": [
+        "storefront",
+        "headless-commerce",
+        "enterprise-commerce"
+      ],
+      "project_type": "full_system",
+      "description": "Extensible PHP commerce application with REST, SOAP and GraphQL APIs; release-specific, service-heavy deployment requirements.",
+      "license": {
+        "spdx": "OSL-3.0 with repository ordering-document qualifications",
+        "commercial_reuse": "External deployment and derivative-work provisions are significant; repository says customer ordering terms may supersede OSL for covered files. Legal review is essential."
+      },
+      "technologies": [
+        "PHP",
+        "Composer",
+        "MySQL/MariaDB",
+        "REST",
+        "SOAP",
+        "GraphQL",
+        "OpenSearch",
+        "RabbitMQ",
+        "Varnish (release-specific)"
+      ],
+      "headless_api": "REST, SOAP and GraphQL API surfaces; headless feasibility evidenced, not turnkey storefront readiness.",
+      "multi_vendor": "Unknown; no native marketplace capability verified.",
+      "arabic_rtl": "Translation dictionaries and language packages documented; Arabic completeness/RTL unverified.",
+      "maintenance": {
+        "stars": 12204,
+        "last_commit": "2026-10-14",
+        "latest_release": "2.4.10-alpha1 (2026-10-13; alpha)"
+      },
+      "security_flags": [
+        "Adobe bulletin APSB26-92 (2026-08-18) reports critical/important/moderate vulnerabilities; apply fixed updates and verify exact branch."
+      ],
+      "score": 71,
+      "recommendation": "evaluate",
+      "confidence": "moderate; license and tech facts supported, but alpha status and significant operational/security diligence",
+      "evidence_note": "../../research-sources/ecommerce-candidates/08-magento-open-source.md",
+      "sources": [
+        "https://github.com/magento/magento2",
+        "https://github.com/magento/magento2/blob/2.4-develop/LICENSE.txt",
+        "https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements",
+        "https://developer.adobe.com/commerce/webapi/rest/",
+        "https://developer.adobe.com/commerce/webapi/graphql/",
+        "https://www.adobe.com/trust/security/products/commerce/apsb26-92.html"
+      ]
+    },
+    {
+      "id": "ecommerce-prestashop",
+      "name": "PrestaShop",
+      "repository_url": "https://github.com/PrestaShop/PrestaShop",
+      "official_website": "https://www.prestashop-project.org/",
+      "subdomains": [
+        "storefront",
+        "multistore",
+        "headless-commerce"
+      ],
+      "project_type": "full_system",
+      "description": "PHP e-commerce application with product/cart/order domains, modules/themes, multistore and Webservice/Admin API surfaces.",
+      "license": {
+        "spdx": "OSL-3.0 Core; AFL-3.0 Modules",
+        "commercial_reuse": "Review obligations for both project licenses and separate third-party dependencies against intended modification/distribution/deployment with counsel."
+      },
+      "technologies": [
+        "PHP",
+        "Symfony (progressive migration)",
+        "MySQL/MariaDB/Percona (version-specific)",
+        "REST/Webservice",
+        "Admin API Platform 3",
+        "OAuth",
+        "CQRS"
+      ],
+      "headless_api": "Legacy Webservice CRUD API and newer Admin API; headless capability does not establish turnkey frontend.",
+      "multi_vendor": "Unknown; multistore is documented but is not seller marketplace evidence.",
+      "arabic_rtl": "Translation catalogs/language packs documented; Arabic/RTL unverified.",
+      "maintenance": {
+        "stars": 9207,
+        "last_commit": "2026-10-14",
+        "latest_release": "9.2.0 (2026-09-30)"
+      },
+      "security_flags": [
+        "Multiple High/Critical 2025-2026 advisories; verify fixed versions, supported branch and extension exposure."
+      ],
+      "score": 71,
+      "recommendation": "evaluate",
+      "confidence": "moderate; active repository and APIs evidenced, but marketplace, RTL and exact license obligations need review",
+      "evidence_note": "../../research-sources/ecommerce-candidates/09-prestashop.md",
+      "sources": [
+        "https://github.com/PrestaShop/PrestaShop/",
+        "https://raw.githubusercontent.com/PrestaShop/PrestaShop/develop/LICENSE.md",
+        "https://devdocs.prestashop-project.org/9/development/architecture/",
+        "https://devdocs.prestashop-project.org/9/webservice/",
+        "https://devdocs.prestashop-project.org/9/admin-api/",
+        "https://www.prestashop-project.org/security/security-policy/",
+        "https://github.com/PrestaShop/PrestaShop/security/advisories"
+      ],
+      "score_note": "Recalculated from the nine criterion-point values in the evidence note during integration."
+    }
+  ]
+}
