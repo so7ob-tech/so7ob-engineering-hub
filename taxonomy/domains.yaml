@@ -59,7 +59,10 @@ areas:
     name: Retail & POS
     subdomains: [point-of-sale, inventory, multi-store, pricing, customer-loyalty]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/retail-pos/retail-pos-candidate-review.json
   - id: erp
     name: ERP
     subdomains: [finance, procurement, operations, manufacturing, human-capital]
