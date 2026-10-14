@@ -2,7 +2,7 @@
 
 A versioned, evidence-first engineering knowledge base and reusable-assets program for So7ob Tech. This repository separates **verified facts**, **engineering recommendations**, and **unverified hypotheses** so teams can reuse knowledge without confusing a shortlist with due diligence.
 
-> Current state: **Foundation plus five domain reviews.** Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, and News & Media each have ten source-reviewed candidates with provisional scores; no project is approved for adoption. Hospital Management & EHR is next in the priority queue.
+> Current state: **Foundation plus six domain reviews.** Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, News & Media, and Hospital Management & EHR each have ten source-reviewed candidates with provisional scores; no project is approved for adoption. Healthcare candidates span non-interchangeable hospital, ambulatory, laboratory and infrastructure classes. Clinic Management is next in the priority queue.
 
 ## Contents
 
@@ -22,7 +22,7 @@ A versioned, evidence-first engineering knowledge base and reusable-assets progr
 ## Start here
 
 1. Read `docs/operating-model.md` and `evaluations/scoring-rubric.md`.
-2. Browse the domain queue in `taxonomy/domains.yaml`; review `catalog/business-finance/`, `catalog/commerce/`, `catalog/retail-pos/`, `catalog/cms/`, and `catalog/news-media/` for candidate records and reports.
+2. Browse the domain queue in `taxonomy/domains.yaml`; review `catalog/business-finance/`, `catalog/commerce/`, `catalog/retail-pos/`, `catalog/cms/`, `catalog/news-media/`, and `catalog/hospital-management-ehr/` for candidate records and reports.
 3. Add candidates from primary sources using `templates/repository-card.yaml`.
 4. Validate with `python3 scripts/validate_catalog.py`.
 5. Treat every recommendation as conditional on customer requirements, jurisdiction, security review, and license review.
@@ -35,7 +35,7 @@ Status labels: `planned` (design only), `in_progress`, `implemented`, `tested`, 
 
 ## Initial priorities
 
-The prompt's first research wave is: Financial Systems & FinTech; E-commerce; Retail & POS; CMS; News & Media; Hospital Management & EHR; Clinic Management; Booking & Service Marketplaces. The remaining catalog areas are explicitly queued, not complete. Each domain should contain up to ten suitable, genuinely reviewed projects; fewer is preferable to padding.
+The prompt's first research wave is: Financial Systems & FinTech; E-commerce; Retail & POS; CMS; News & Media; Hospital Management & EHR; Clinic Management; Booking & Service Marketplaces. The first six domains have provisional candidate reviews. Clinic Management is the next queued domain; other catalog areas remain queued, not complete. Each domain should contain up to ten suitable, genuinely reviewed projects; fewer is preferable to padding.
 
 ## Local checks
 
@@ -47,7 +47,7 @@ The PostgreSQL DDL in `database/schema.sql` is a design artifact; no database in
 
 ## Security and privacy
 
-Do not put customer secrets, personal data, credentials, private vulnerability details, or customer-specific designs in this shared repository. Use approved private project storage for client materials. Financial and health projects require jurisdiction- and use-specific compliance review; no listed software is represented as PCI DSS, HL7/FHIR, HIPAA, or other compliant absent independent evidence.
+Do not put customer secrets, personal data, credentials, private vulnerability details, or customer-specific designs in this shared repository. Use approved private project storage for client materials. Financial and health projects require jurisdiction- and use-specific compliance review; no listed software is represented as PCI DSS, HL7/FHIR-conformant, HIPAA-compliant, clinically safe, or otherwise compliant absent appropriately scoped independent evidence.
 
 ## License
 

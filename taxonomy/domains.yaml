@@ -120,7 +120,11 @@ areas:
     name: Hospital Management & EHR
     subdomains: [ehr, hospital-information-system, clinical-workflow]
     priority: wave_1
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/hospital-management-ehr/hospital-management-ehr-candidate-review.json
+    scope_note: Includes integrated hospital suites, ambulatory EHRs, LIS, and interoperability/clinical-data infrastructure as distinct candidate classes; scores are not one interchangeable ranking. No adoption, security, clinical-safety, or regulatory approval is implied.
   - id: clinic-management
     name: Clinic Management
     subdomains: [appointments, practice-management, e-prescriptions]
