@@ -76,7 +76,11 @@ areas:
     name: CRM
     subdomains: [sales-pipeline, marketing-automation, customer-service]
     priority: wave_2
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/crm/crm-candidate-review.json
+    scope_note: Candidates span general-purpose CRM suites, nonprofit constituent CRM, an open-core ERP CRM module, low-code and framework-based applications, and a legacy reference-only codebase. Scores are provisional, class-sensitive, and not an adoption, security, legal, compliance, commercial-use, or production approval.
   - id: hr-payroll
     name: HR & Payroll
     subdomains: [hris, payroll, attendance, recruitment]

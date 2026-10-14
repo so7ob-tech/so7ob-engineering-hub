@@ -1,0 +1,500 @@
+{
+  "schema_version": 1,
+  "domain_id": "crm",
+  "domain_name": "CRM",
+  "verification_date": "2026-10-14",
+  "status": "candidate_reviewed_provisional",
+  "scope_note": "Synthesis of the ten supplied discovery and review records only; no item-level re-research was performed. The provisional scores are class-sensitive and do not imply adoption, security, legal, compliance, or production approval. No license or security approval was performed.",
+  "scoring_rubric": {
+    "feature_domain_fit": 20,
+    "architecture_reuse": 15,
+    "maintenance": 15,
+    "security_dependencies": 15,
+    "documentation_tests": 10,
+    "license_clarity": 10,
+    "setup_deployment": 5,
+    "integrations_apis": 5,
+    "arabic_i18n_rtl": 5,
+    "total": 100
+  },
+  "records": [
+    {
+      "id": "crm-espocrm",
+      "name": "EspoCRM",
+      "repository_url": "https://github.com/espocrm/espocrm",
+      "official_website": "https://www.espocrm.com/",
+      "category": "General-purpose, self-hostable open-source CRM",
+      "fit_limitations": [
+        "Evidence covers leads, contacts, sales opportunities, campaigns, support cases, workflows, on-premise deployment, installation, and API coverage.",
+        "Verify module-specific licensing and costs, security/advisory posture, Arabic/RTL behavior, and operational fit.",
+        "This review does not establish production approval."
+      ],
+      "license_caveats": "Download/licensing and hosted-plan materials require module-specific license and commercial-cost review.",
+      "maintenance_security": "Development activity scored strongly, but the selected release and security/advisory posture require operational review.",
+      "interoperability": "API coverage is documented; confirm the required integration behavior during controlled evaluation.",
+      "arabic_rtl": "Arabic/i18n/RTL fit remains a direct verification gate; generic multilingual evidence does not establish Arabic/RTL.",
+      "score_midpoint": 75,
+      "score_range": {
+        "low": 57,
+        "high": 89
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 18,
+        "architecture_reuse": 12,
+        "maintenance": 14,
+        "security_dependencies": 8,
+        "documentation_tests": 7,
+        "license_clarity": 6,
+        "setup_deployment": 4,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 2
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Promising real general-purpose CRM with evidence-backed sales, campaigns, support cases, self-hosting and API coverage. Proceed only to controlled evaluation; verify module-specific licensing and costs, security/advisory posture, Arabic/RTL if required, and operational fit.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/01-espocrm.md",
+      "primary_source_urls": [
+        "https://github.com/espocrm/espocrm",
+        "https://docs.espocrm.com/user-guide/sales-management/",
+        "https://docs.espocrm.com/user-guide/campaigns/",
+        "https://docs.espocrm.com/user-guide/case-management/",
+        "https://docs.espocrm.com/administration/workflows/",
+        "https://docs.espocrm.com/development/api/",
+        "https://www.espocrm.com/download/",
+        "https://www.espocrm.com/pricing/",
+        "https://github.com/espocrm/espocrm/security/policy",
+        "https://docs.espocrm.com/administration/installation/"
+      ]
+    },
+    {
+      "id": "crm-suitecrm",
+      "name": "SuiteCRM",
+      "repository_url": "https://github.com/salesagility/SuiteCRM",
+      "official_website": "https://suitecrm.com/",
+      "category": "General-purpose enterprise CRM; open-source community product",
+      "fit_limitations": [
+        "Broad-function self-hosted CRM with documented cases, workflows, supported versions, and V8 API.",
+        "Select a supported release, rehearse deployment, review the license, disposition release-specific vulnerabilities, and verify Arabic/RTL.",
+        "Arabic/RTL fit was not established as evidence."
+      ],
+      "license_caveats": "SuiteCRM publishes GNU AGPL version 3 license text; review implications for the selected deployment.",
+      "maintenance_security": "Current activity and support-period material were identified, but release-specific vulnerability disposition and supported-version selection remain gates.",
+      "interoperability": "V8 API installation and OAuth2 setup are documented; confirm the required integration behavior.",
+      "arabic_rtl": "Arabic/RTL requires direct verification.",
+      "score_midpoint": 69,
+      "score_range": {
+        "low": 53,
+        "high": 81
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 17,
+        "architecture_reuse": 11,
+        "maintenance": 13,
+        "security_dependencies": 5,
+        "documentation_tests": 7,
+        "license_clarity": 7,
+        "setup_deployment": 4,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 1
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Relevant broad-function CRM with self-hosting, current activity and documented support periods. Require release-specific vulnerability disposition, supported-version selection, license review, deployment rehearsal and Arabic/RTL verification before any adoption decision.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/02-suitecrm.md",
+      "primary_source_urls": [
+        "https://github.com/salesagility/SuiteCRM",
+        "https://docs.suitecrm.com/community/supported-versions/",
+        "https://docs.suitecrm.com/user/",
+        "https://docs.suitecrm.com/user/customer-service/cases/",
+        "https://docs.suitecrm.com/user/getting-started/introduction/",
+        "https://github.com/salesagility/SuiteCRM/blob/master/LICENSE.txt",
+        "https://docs.suitecrm.com/community/security-policy/",
+        "https://github.com/salesagility/SuiteCRM/security/advisories",
+        "https://docs.suitecrm.com/8.x/admin/compatibility-matrix/",
+        "https://docs.suitecrm.com/developer/integration-api/v8/installation/"
+      ]
+    },
+    {
+      "id": "crm-civicrm",
+      "name": "CiviCRM",
+      "repository_url": "https://github.com/civicrm/civicrm-core",
+      "official_website": "https://civicrm.org/",
+      "category": "Nonprofit and civic-sector constituent CRM",
+      "fit_limitations": [
+        "Directly relevant to advocacy, nonprofit, NGO, and constituent relationship management; available standalone or integrated with CMS platforms.",
+        "Validate the target CMS, exact workflows and extensions, runtime/release support, security and dependency posture, license implications, and Arabic/RTL.",
+        "Fit is class-specific and does not establish production approval."
+      ],
+      "license_caveats": "Resolve license implications for the target deployment and extensions before adoption.",
+      "maintenance_security": "Development activity is strong in the supplied review, but release/runtime support, security/advisory status, and dependency audit remain gates.",
+      "interoperability": "API documentation and CMS integration context are available; validate the target CMS and extension set.",
+      "arabic_rtl": "Arabic/RTL needs direct verification; the review did not establish broad fit.",
+      "score_midpoint": 73,
+      "score_range": {
+        "low": 56,
+        "high": 84
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 15,
+        "architecture_reuse": 13,
+        "maintenance": 15,
+        "security_dependencies": 7,
+        "documentation_tests": 8,
+        "license_clarity": 7,
+        "setup_deployment": 3,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 1
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Strong, directly relevant nonprofit constituent CRM; evaluate fit and exact workflows/extensions in the target CMS. Resolve release/runtime support, security/advisory status, dependency audit, license implications, and Arabic/RTL needs before any adoption decision.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/03-civicrm.md",
+      "primary_source_urls": [
+        "https://github.com/civicrm/civicrm-core",
+        "https://civicrm.org/explore-civicrm",
+        "https://docs.civicrm.org/user/en/latest/",
+        "https://docs.civicrm.org/installation/en/latest/",
+        "https://civicrm.org/download",
+        "https://docs.civicrm.org/sysadmin/en/latest/upgrade/",
+        "https://github.com/civicrm/civicrm-core/security/policy",
+        "https://github.com/civicrm/civicrm-core/network/dependencies",
+        "https://docs.civicrm.org/dev/en/latest/api/"
+      ]
+    },
+    {
+      "id": "crm-twenty",
+      "name": "Twenty",
+      "repository_url": "https://github.com/twentyhq/twenty",
+      "official_website": "https://twenty.com/",
+      "category": "Extensible, self-hostable CRM platform for technical teams",
+      "fit_limitations": [
+        "Verified contacts, accounts, opportunities and pipeline, with schema-driven APIs, workflows, extension surfaces, and Docker Compose self-hosting.",
+        "Native marketing-campaign and service-case capabilities were not established.",
+        "Confirm license applicability, plan and integration parity, critical/high advisory disposition, production operations, and Arabic/RTL behavior."
+      ],
+      "license_caveats": "Published materials describe AGPL, MIT, exception, and commercial boundaries; assess applicability to the selected package and deployment.",
+      "maintenance_security": "Recent activity, release, security policy, and CI were identified, but branch support and critical/high advisory/dependency disposition require review.",
+      "interoperability": "REST/GraphQL, metadata APIs, and extension surfaces are documented; plan limits and integration parity require confirmation.",
+      "arabic_rtl": "Pricing advertises 30+ languages and release notes verify RTL layout work, but full Arabic coverage and bidi behavior remain unverified.",
+      "score_midpoint": 71,
+      "score_range": {
+        "low": 58,
+        "high": 82
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 16,
+        "architecture_reuse": 12,
+        "maintenance": 13,
+        "security_dependencies": 7,
+        "documentation_tests": 8,
+        "license_clarity": 5,
+        "setup_deployment": 4,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 2
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Genuine extensible CRM with strong contacts/accounts/opportunities, schema-driven APIs, workflows, and Docker Compose self-hosting. Before a bounded proof of concept or adoption decision, establish license and edition applicability, check the selected release against published critical/high advisories, verify deployment and integrations, and test Arabic/RTL. Campaign and service-case management were not established as native capabilities.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/04-twenty.md",
+      "primary_source_urls": [
+        "https://github.com/twentyhq/twenty",
+        "https://docs.twenty.com/user-guide/data-model/capabilities/objects",
+        "https://docs.twenty.com/developers/extend/capabilities/api",
+        "https://docs.twenty.com/developers/self-host/capabilities/docker-compose",
+        "https://github.com/twentyhq/twenty/blob/main/LICENSE",
+        "https://twenty.com/pricing",
+        "https://github.com/twentyhq/twenty/security/policy",
+        "https://github.com/twentyhq/twenty/security/advisories",
+        "https://github.com/twentyhq/twenty/releases"
+      ]
+    },
+    {
+      "id": "crm-krayin-crm",
+      "name": "Krayin CRM",
+      "repository_url": "https://github.com/krayin/laravel-crm",
+      "official_website": "https://krayincrm.com/",
+      "category": "SME-focused customer-lifecycle CRM built on Laravel; open source",
+      "fit_limitations": [
+        "Evidence supports self-hosted lead and pipeline workflows, customer-lifecycle functionality, and extension/API mechanisms.",
+        "Determine affected and fixed versions for the recorded advisory; audit dependencies and module licenses.",
+        "Validate desired service and campaign coverage, API behavior, and Arabic/RTL if required."
+      ],
+      "license_caveats": "Repository license and module structure require review of dependency and module-license implications.",
+      "maintenance_security": "Maintenance activity is evidenced, but the recorded GitHub Advisory Database item requires affected/fixed-version disposition and dependency review.",
+      "interoperability": "REST API and developer documentation are available; validate the required integration behavior.",
+      "arabic_rtl": "Language-resource evidence does not establish Arabic/RTL fit; test directly.",
+      "score_midpoint": 68,
+      "score_range": {
+        "low": 59,
+        "high": 76
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 13,
+        "architecture_reuse": 11,
+        "maintenance": 13,
+        "security_dependencies": 7,
+        "documentation_tests": 7,
+        "license_clarity": 9,
+        "setup_deployment": 4,
+        "integrations_apis": 3,
+        "arabic_i18n_rtl": 1
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Genuine self-hosted CRM with documented lead/pipeline workflows and extension/API mechanisms, but evaluate only after determining the advisory's affected/fixed versions, checking dependency and module licenses, validating desired service/campaign coverage and API, and directly testing Arabic/RTL if needed.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/05-krayin-crm.md",
+      "primary_source_urls": [
+        "https://github.com/krayin/laravel-crm",
+        "https://docs.krayincrm.com/",
+        "https://krayincrm.com/",
+        "https://github.com/krayin/laravel-crm/blob/master/LICENSE",
+        "https://github.com/krayin/laravel-crm/releases",
+        "https://github.com/krayin/laravel-crm/security/policy",
+        "https://github.com/advisories/GHSA-gxmj-vr4j-8j5c",
+        "https://devdocs.krayincrm.com/",
+        "https://devdocs.krayincrm.com/2.0/api/",
+        "https://github.com/krayin/laravel-crm/tree/2.2/packages/Webkul/Admin/src/Resources/lang"
+      ]
+    },
+    {
+      "id": "crm-frappe-crm",
+      "name": "Frappe CRM",
+      "repository_url": "https://github.com/frappe/crm",
+      "official_website": "https://frappecrm.com/",
+      "category": "Sales-focused CRM application on the Frappe framework",
+      "fit_limitations": [
+        "Suitable for a scoped sales-pipeline and relationship-management evaluation with documented leads, deals, activities, kanban pipelines, customization, integrations, and self-hosting.",
+        "Campaign marketing and case management were not evidenced as covered.",
+        "Review license and security posture, run a deployment trial, and directly verify Arabic/RTL before adoption."
+      ],
+      "license_caveats": "Review the applicable license and any commercial/self-hosting implications before adoption.",
+      "maintenance_security": "Release activity is evidenced, but repository security-policy status requires security review.",
+      "interoperability": "An official integrations page supports an interoperability check; confirm required integrations in a trial.",
+      "arabic_rtl": "An official issue reports an RTL gap; Arabic/RTL support must be tested rather than assumed.",
+      "score_midpoint": 73,
+      "score_range": {
+        "low": 65,
+        "high": 80
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 16,
+        "architecture_reuse": 12,
+        "maintenance": 13,
+        "security_dependencies": 8,
+        "documentation_tests": 8,
+        "license_clarity": 7,
+        "setup_deployment": 4,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 1
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Evaluate for sales pipeline and relationship management, conditional on license and security reviews, a deployment trial, and direct Arabic/RTL verification. Campaign marketing and case management are not evidenced as covered.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/06-frappe-crm.md",
+      "primary_source_urls": [
+        "https://github.com/frappe/crm",
+        "https://docs.frappe.io/crm/introduction",
+        "https://github.com/frappe/crm/releases",
+        "https://frappe.io/crm/pricing",
+        "https://github.com/frappe/crm/security/policy",
+        "https://docs.frappe.io/crm/installation",
+        "https://frappe.io/crm/integrations",
+        "https://github.com/frappe/crm/issues/1618"
+      ]
+    },
+    {
+      "id": "crm-yetiforce",
+      "name": "YetiForce CRM",
+      "repository_url": "https://github.com/YetiForceCompany/YetiForceCRM",
+      "official_website": "https://yetiforce.com/",
+      "category": "General-purpose CRM with sales, service and business-process capabilities",
+      "fit_limitations": [
+        "Strong CRM and business-process breadth across sales pipeline, marketing, customer support and configurable modules, with adjacent project/time, finance/invoicing, logistics and HR modules.",
+        "Adjacent modules are not evidence of specialist-application parity; review module/add-on boundaries and depth for intended workflows.",
+        "Current source/package identity and release provenance require reconciliation before adoption."
+      ],
+      "license_caveats": "Archived GitHub metadata reports Other/NOASSERTION; historical sources refer to Vtiger CRM Public License 1.0 and YetiForce Public License 4.0. Current installation guidance describes a license similar to MIT but requires registration after a 14-day trial and review of full terms. Resolve the exact current package license and rights for commercial deployment, redistribution, modification, SaaS and paid implementation with legal review.",
+      "maintenance_security": "Official release notes report YetiForce 7.1.1 (2026-05-22) and 7.1.2 (2026-06-01), while the supplied official repository is archived with a 2024-09-13 last push and 6.5.0 latest listed release. Dependency fixes are noted, but current security policy, SBOM, advisory coverage, dependency matrix and patch SLA were not established; reconcile current package/source provenance.",
+      "interoperability": "Official OpenAPI 3.0 documentation covers webservice routes and record/user methods. The ecosystem includes update packages, scripts, customer portal, language packages and marketplace offerings; Roundcube and PBX-related functions appear in release documentation. Verify premium/add-on and third-party integration package/license boundaries.",
+      "arabic_rtl": "Official documentation confirms Crowdin-based translation infrastructure and a languages project, but opened primary sources did not verify Arabic package coverage or correct bidirectional/RTL interface behavior. Score is zero pending direct build-level verification.",
+      "score_midpoint": 64,
+      "score_range": {
+        "low": 45,
+        "high": 80
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 15,
+        "architecture_reuse": 10,
+        "maintenance": 13,
+        "security_dependencies": 8,
+        "documentation_tests": 8,
+        "license_clarity": 3,
+        "setup_deployment": 3,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 0
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Strong functional breadth and current release notes justify evaluation, but resolve exact current source/package identity and license terms, reconcile release provenance, and test security, deployment and Arabic/RTL before considering adoption. This assessment is not legal, security, compliance, commercial-use or production approval.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/07-yetiforce.md",
+      "primary_source_urls": [
+        "https://github.com/YetiForceCompany/YetiForceCRM",
+        "https://doc.yetiforce.com/en/introduction/release-notes-changelog/",
+        "https://github.com/YetiForceCompany/YetiForceCRM/releases",
+        "https://github.com/YetiForceCompany/YetiForce",
+        "https://yetiforce.com/en/",
+        "https://doc.yetiforce.com/en/introduction/installation-manual/",
+        "https://github.com/YetiForceCompany/YetiForceCRM/issues/6132",
+        "https://api.github.com/repos/YetiForceCompany/YetiForceCRM",
+        "https://api.github.com/repos/YetiForceCompany/YetiForceCRM/releases",
+        "https://doc.yetiforce.com/en/",
+        "https://doc.yetiforce.com/api/",
+        "https://doc.yetiforce.com/en/contributing/languages/",
+        "https://github.com/YetiForceCompany/YetiForceCRMLanguages"
+      ]
+    },
+    {
+      "id": "crm-vtiger-open-source",
+      "name": "Vtiger CRM Open Source",
+      "repository_url": "https://github.com/vtiger-crm/vtigercrm",
+      "official_website": "https://www.vtiger.com/open-source-crm/",
+      "category": "Community CRM codebase; current public repository linkage to commercial Vtiger Open Source 8.4 is unverified",
+      "fit_limitations": [
+        "Legacy CRM capabilities include contacts, sales/deals, support tickets, products/services, workflows, roles/profiles, REST APIs and extensibility.",
+        "The supplied repository URL returns 404; the extant repository exposes only 2012 commits and no releases, so linkage to current Open Source 8.4 is unverified.",
+        "Cloud-only or add-on territory is marked in official comparison material; community source is distinct from free One Pilot Cloud and paid Cloud services/features."
+      ],
+      "license_caveats": "Repository LICENSE.txt identifies SugarCRM Public License 1.1.2; the official product page describes Vtiger Public License 1.1 for Vtiger modifications and MPL for some additional components, while GitHub reports Other/NOASSERTION. Resolve component/build-specific licensing with legal review; no commercial-use approval is implied.",
+      "maintenance_security": "Repository is not archived and API metadata reports pushed_at 2026-05-03, but visible commit history and commit API expose only two commits from 2012 and no releases. Official site advertises Open Source 8.4.0, but current source-tree relationship is unverified. GitHub reports no security policy; legacy dependencies are not a current lockfile or reproducible audit.",
+      "interoperability": "Official Open Source material advertises REST APIs and phone/email/SMS integration; the repository exposes webservice.php and SOAP paths. Cloud comparison marks many named connectors Cloud-only. Verify edition-specific availability, API versioning and current reference accessibility.",
+      "arabic_rtl": "Official site claims 30+ languages and language packs/extensions, but no opened primary evidence verified Arabic translation files or correct RTL/bidi behavior. GitHub code search required sign-in. Arabic/RTL is unverified; aggregate language counts do not demonstrate working Arabic layouts.",
+      "score_midpoint": 45,
+      "score_range": {
+        "low": 31,
+        "high": 59
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 11,
+        "architecture_reuse": 8,
+        "maintenance": 3,
+        "security_dependencies": 4,
+        "documentation_tests": 6,
+        "license_clarity": 6,
+        "setup_deployment": 3,
+        "integrations_apis": 3,
+        "arabic_i18n_rtl": 1
+      },
+      "recommendation": "reference_only",
+      "recommendation_rationale": "Legacy CRM features and PHP extension patterns may be useful for product or architecture study, but the supplied repo identifier is wrong, visible source history is stale, the link to current official 8.4 code is unverified, and current security, exact component licensing and Arabic/RTL evidence remain insufficient. This is not legal, security, compliance, commercial-use or production approval.",
+      "confidence": "low",
+      "evidence_note": "../../research-sources/crm-candidates/08-vtiger-open-source.md",
+      "primary_source_urls": [
+        "https://github.com/vtigercrm/vtigercrm",
+        "https://www.vtiger.com/open-source-crm/",
+        "https://github.com/vtiger-crm/vtigercrm",
+        "https://github.com/vtiger-crm/vtigercrm/commits/master/",
+        "https://www.vtiger.com/open-source-vs-cloud/",
+        "https://github.com/vtiger-crm/vtigercrm/blob/master/LICENSE.txt",
+        "https://github.com/vtiger-crm/vtigercrm/security",
+        "https://github.com/vtiger-crm/vtigercrm/blob/master/DEPENDENCIES.txt",
+        "https://www.vtiger.com/docs/",
+        "https://github.com/vtiger-crm/vtigercrm/search?q=Arabic&type=code"
+      ]
+    },
+    {
+      "id": "crm-odoo-community",
+      "name": "Odoo Community CRM",
+      "repository_url": "https://github.com/odoo/odoo",
+      "official_website": "https://www.odoo.com/app/crm",
+      "category": "CRM module within open-core Odoo Community ERP; edition/plan boundaries apply",
+      "fit_limitations": [
+        "Core fit includes leads/opportunities, stages and pipeline, activities, communication, sales teams and reporting.",
+        "Quotations depend on Sales; campaigns, live chat, SMS/VoIP, AI scoring and similar claims must be checked against module and edition. Product-page claims do not establish Community parity.",
+        "This is an open-core CRM module in a broader ERP runtime, not a standalone turnkey CRM suite."
+      ],
+      "license_caveats": "Official v19 docs specify Community LGPLv3, Enterprise License v1.0 requiring a subscription, and Odoo Apps generally Odoo Proprietary License v1.0. Examine each component and intended deployment/distribution with legal review; no legal or commercial-use approval is implied.",
+      "maintenance_security": "Odoo 19.0 branch activity is current, with a 2026-10-14 commit, but GitHub lists no packaged releases and the latest commit was not CRM-specific. Odoo provides responsible disclosure and security information, while exact branch/addon advisories and supported lifecycle require audit.",
+      "interoperability": "v19 External JSON-2 API documents bearer keys, access enforcement and model introspection. External API access is limited to Custom Odoo pricing plans and unavailable on One App Free/Standard; confirm edition/provider and marketed integrations for the target deployment.",
+      "arabic_rtl": "Official v19 source-install documentation explicitly requires rtlcss for RTL languages including Arabic, verifying a mechanism but not Arabic translation completeness or bidi quality. Arabic CRM catalog coverage was not verified; test target locale, reports, emails and mixed-direction text.",
+      "score_midpoint": 76,
+      "score_range": {
+        "low": 64,
+        "high": 86
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 16,
+        "architecture_reuse": 12,
+        "maintenance": 13,
+        "security_dependencies": 10,
+        "documentation_tests": 8,
+        "license_clarity": 8,
+        "setup_deployment": 3,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 2
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "Promising conventional CRM functionality with official docs, extensibility and self-hosting, but exact Community feature boundaries, version support, security posture, custom coverage and Arabic quality need installation-level validation. Obtain suitable license and security review. This is not production, compliance, security or commercial-use approval.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/09-odoo-community-crm.md",
+      "primary_source_urls": [
+        "https://github.com/odoo/odoo",
+        "https://www.odoo.com/documentation/19.0/legal/licenses.html",
+        "https://github.com/odoo/odoo/tree/19.0/addons/crm",
+        "https://www.odoo.com/app/crm",
+        "https://www.odoo.com/documentation/19.0/applications/sales/crm.html",
+        "https://github.com/odoo/odoo/releases",
+        "https://api.github.com/repos/odoo/odoo/commits?sha=19.0&per_page=1",
+        "https://www.odoo.com/security",
+        "https://www.odoo.com/documentation/19.0/administration/on_premise/source.html",
+        "https://github.com/odoo/docker",
+        "https://www.odoo.com/documentation/19.0/developer/reference/backend/testing.html",
+        "https://www.odoo.com/documentation/19.0/developer/reference/external_api.html"
+      ]
+    },
+    {
+      "id": "crm-corteza",
+      "name": "Corteza CRM",
+      "repository_url": "https://github.com/cortezaproject/corteza",
+      "official_website": "https://cortezaproject.org/",
+      "category": "Low-code platform with CRM solution/application and configurable business workflows",
+      "fit_limitations": [
+        "Official CRM documentation covers leads, accounts/contacts, opportunities, product pricing, quotes, campaigns, cases, activity and automation.",
+        "It is a configurable platform CRM rather than CRM-only software; custom business requirements depend on platform configuration and development.",
+        "The recently published SQL injection advisory requires exact version/configuration disposition before any adoption decision."
+      ],
+      "license_caveats": "Repository README identifies Apache-2.0. Hosted Corteza is mentioned as a service, but inspected sources did not establish a separately licensed commercial-edition boundary. Assess distribution/deployment facts and dependency licenses; this is not legal clearance.",
+      "maintenance_security": "Releases list 2024.9.10 following the 2024.9 series, but current commit cadence and support-life commitments were not established. GitHub lists a Moderate SQL injection advisory for Corteza 2024.9.8 published 2026-09-21; verify affected/fixed ranges and deployed version.",
+      "interoperability": "README documents REST APIs, API-centric design, automation and integration guidance. No comprehensive maintained connector catalog or per-integration compatibility guarantee was established.",
+      "arabic_rtl": "Project states that translations and terminology can be customized, but no opened primary source verified Arabic translation coverage, RTL layout behavior or Arabic-specific testing. Scoring is conservative and provisional.",
+      "score_midpoint": 66,
+      "score_range": {
+        "low": 49,
+        "high": 81
+      },
+      "score_breakdown": {
+        "feature_domain_fit": 16,
+        "architecture_reuse": 11,
+        "maintenance": 8,
+        "security_dependencies": 6,
+        "documentation_tests": 7,
+        "license_clarity": 8,
+        "setup_deployment": 4,
+        "integrations_apis": 4,
+        "arabic_i18n_rtl": 2
+      },
+      "recommendation": "evaluate",
+      "recommendation_rationale": "The documented CRM breadth and low-code reuse merit evaluation, but the recently published security advisory requires exact version/configuration disposition; commit/support cadence and test/dependency posture are also uncertain. This is not a legal, security, compliance, commercial-use or production approval.",
+      "confidence": "medium",
+      "evidence_note": "../../research-sources/crm-candidates/10-corteza.md",
+      "primary_source_urls": [
+        "https://github.com/cortezaproject/corteza",
+        "https://cortezaproject.org/documentation/user-guides/corteza-crm-user-guide/?s=",
+        "https://github.com/cortezaproject/corteza/releases",
+        "https://github.com/cortezaproject/corteza/commits/2024.9/",
+        "https://github.com/cortezaproject/corteza/security/policy",
+        "https://github.com/cortezaproject/corteza/security/advisories",
+        "https://docs.cortezaproject.org/corteza-docs/2024.9/index.html"
+      ]
+    }
+  ]
+}

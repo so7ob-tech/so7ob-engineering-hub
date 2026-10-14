@@ -13,7 +13,8 @@
     "hospital-management-ehr/hospital-management-ehr-candidate-review.json",
     "clinic-management/clinic-management-candidate-review.json",
     "booking-service-marketplaces/booking-service-marketplaces-candidate-review.json",
-    "erp/erp-candidate-review.json"
+    "erp/erp-candidate-review.json",
+    "crm/crm-candidate-review.json"
   ],
   "candidate_reviewed_domains": [
     {
@@ -85,13 +86,22 @@
       "ranking_status": "provisional_not_final",
       "report": "erp/erp-candidate-review.md",
       "category_note": "Candidates span integrated modular suites, open-core editions, distribution/manufacturing-focused systems and legacy/limited projects. Scores are class-sensitive; edition, module coverage and license boundaries differ. No adoption, security, legal, statutory-accounting, Arabic/RTL or production approval is implied."
+    },
+    {
+      "domain_id": "crm",
+      "record_count": 10,
+      "review_date": "2026-10-14",
+      "ranking_status": "provisional_not_final",
+      "report": "crm/crm-candidate-review.md",
+      "category_note": "Ten candidates span general-purpose suites, nonprofit constituent management, an open-core ERP CRM module, low-code and framework-based CRM applications, and a legacy reference-only codebase. Scores are class-sensitive and not an adoption, security, legal, compliance, commercial-use or production approval."
     }
   ],
   "research_queue": [
-    "crm"
+    "hr-payroll"
   ],
   "notes": [
-    "Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, News & Media, Hospital Management & EHR, Clinic Management, and ERP each have ten source-reviewed candidates with provisional scores. Booking & Service Marketplaces has six suitable, source-reviewed candidates; the narrower count avoids padding.",
+    "Financial Systems & FinTech, E-commerce, Retail & POS, CMS & Headless CMS, News & Media, Hospital Management & EHR, Clinic Management, ERP, and CRM each have ten source-reviewed candidates with provisional scores. Booking & Service Marketplaces has six suitable, source-reviewed candidates; the narrower count avoids padding.",
+    "CRM classes are not interchangeable: the set contains general-purpose suites, nonprofit constituent management, an open-core ERP module, low-code and framework-based applications, and a legacy reference-only codebase. Security and license findings remain candidate-level follow-up gates.",
     "Clinic Management candidates span direct ambulatory systems, configurable EHR/HMIS platforms, integrated facility suites, diagnostic subsystem software, and developer infrastructure; use-case classes and scores are not interchangeable.",
     "OpenELIS Global is included only as a clinic-adjacent diagnostic/LIS subsystem, not a general practice-management EHR; Medplum is infrastructure for custom clinical software, not a turnkey clinic product.",
     "Healthcare interoperability support is release-, module- and profile-specific. Arabic/RTL, security, privacy, legal, clinical-safety and jurisdiction-specific validation remain separate gates before adoption.",
