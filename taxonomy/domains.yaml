@@ -67,7 +67,11 @@ areas:
     name: ERP
     subdomains: [finance, procurement, operations, manufacturing, human-capital]
     priority: wave_2
-    status: queued
+    status: candidate_reviewed_provisional
+    candidate_count: 10
+    review_date: 2026-10-14
+    catalog_file: catalog/erp/erp-candidate-review.json
+    scope_note: Includes integrated modular suites, open-core editions, distribution/manufacturing-focused systems and legacy/limited projects. Scores are provisional and class-sensitive; edition and module boundaries, licensing, security, statutory accounting, Arabic/RTL, and production readiness require separate validation.
   - id: crm
     name: CRM
     subdomains: [sales-pipeline, marketing-automation, customer-service]

@@ -1,0 +1,52 @@
+ADempiere is a real community ERP/CRM/manufacturing/supply-chain suite with meaningful core capabilities, but the latest published release remains 3.9.4.001 (December 2023); despite repository activity observed through 2026-10-13, it is not a fresh release line. Treat it as a legacy ERP lineage candidate for controlled evaluation/reference, not as a production-ready adoption without current-build, security, localization and workflow proof. The declared identity and canonical repository are correct. Checked 2026-10-14. [1] [2] [3]
+
+**Identity and product class.** The canonical repository is https://github.com/adempiere/adempiere; its own description identifies ADempiere Business Suite ERP/CRM/MFG/SCM/POS. The official website is https://www.adempiere.net/ (the repository and its official material also link to adempiere.io). ADempiere is the 2006 community fork of Compiere, not a successor to iDempiere: iDempiere is a later separate project/continuation in the lineage, so do not substitute it for this candidate. [1] [4] [5]
+
+**Domain fit by module.**
+- **Finance/accounting — substantial native suite coverage:** accounting/GL, payments, bank accounts and reconciliation, cash management, reports, financial year-end closing and cost accounting are documented in the release notes and functional material. Country-specific fiscal/localization processing needs separate validation. [2] [6]
+- **Procurement — substantial native coverage:** requisitions, RFQ/purchasing, purchase orders, receipts, invoice matching and supplier payables appear in official process descriptions and 3.9.4 changes. [2] [6]
+- **Operations/inventory — meaningful native coverage:** warehouse management, shipment/receipt, costing, distribution, sales and supply planning are documented; current operational depth and fit must be demonstrated against So7ob's processes. [2] [6]
+- **Manufacturing — present in core project:** manufacturing and production packages are present in the repository and release material; 3.8 documentation distinguishes complex Production and Production Lite. This is evidence of included code, not a guarantee every advanced manufacturing workflow is fully supported in a current production deployment. [2] [7]
+- **Human capital — present but validate country/payroll scope:** HR/payroll and time/attendance modules are represented in project packages and release notes, including payroll processing. Documentation highlights country-specific Venezuelan procedures; do not infer broad payroll jurisdiction coverage. [2] [7]
+
+The source tree contains modules such as manufacturing, warehouse, HR/payroll, CRM, finance management, cashflow and webservice. Repository presence indicates code in the project, but does not by itself establish inclusion in every binary, maturity, support entitlement or a commercial edition boundary. [8]
+
+**Edition, license and boundary.** The canonical root LICENSE and GitHub repository metadata identify GNU GPL version 2 (GPL-2.0). This is not a permissive license; distribution/modification and combination obligations depend on the actual work and deployment facts. Obtain legal review for the intended use; neither the public repo nor GPL status establishes commercial reuse clearance. The official About page describes the project as community-owned/free, but no verified paid/Enterprise feature matrix, hosted-only capability list or pricing page was found; do not claim such a boundary or infer that all separately distributed add-ons are under the same terms. [4] [5]
+
+**Current release and maintenance.** As of checked date, GitHub's latest release is 3.9.4.001, published 2023-12-20, and the release notes say this micro release contains bug fixes pending a planned 3.9.5. Public commit history rendered for master ends at 2023-12-11; however, GitHub API metadata identifies `develop` as default branch and reports a push on 2026-10-13. Thus activity exists on development branch, but the checked evidence does not show a newer tagged release or supported release/maintenance policy. This split—recent develop activity versus nearly three-year-old release—raises uncertainty about release readiness, support and upgrade path, rather than proving abandonment. [2] [3] [8]
+
+**Security and dependencies.** GitHub reports no SECURITY.md policy. The public repository security page did not provide an advisories inventory; Dependabot-alert API access required authentication, so alert status is unknown, not clean. The 3.9.4 notes report Log4j 2.17.1 as remediation, updated libraries and tests, but those versions are historical evidence and not assurance against current CVEs. Current dependency inventory, SBOM, vulnerability scan, patch cadence and response channel need to be established before use. [9] [2]
+
+**Architecture, deployment, docs and tests.** This is a Java application with Ant/Gradle build material, application-server deployment (release notes name Tomcat 9, Jetty 10 and WildFly 25), PostgreSQL and Oracle support, classic Swing and web UI; it is not a simple modern single-service architecture. 3.9.4 release notes report CI through GitHub Actions, JUnit Jupiter, documented multi-company/concurrency testing and unit-test additions. These are project assertions, not independently rerun tests. Official Docker instructions exist, but the tutorial has dated defaults (PostgreSQL 12.2 and ADempiere 3.9.3) and explicitly says its deployment is educational; production requires database and memory tuning. Official Docker repo labels its project beta for development, and has further stale example versions, so compose/build reproducibility must be tested afresh. Official docs include functional and administration guides but visibly identify version 3.9.4. [2] [7] [10] [11]
+
+**Integrations and APIs.** Official process docs describe web services for real-time order synchronization and spreadsheet imports. Release notes list binary data support for ADempiere web services, OpenID Connect sign-in, Discord/Telegram notifications and Amazon S3 storage. This establishes documented integration capability, not a current versioned REST contract, backward compatibility or production connector support; verify API protocols, auth, schemas and tests in a proof of concept. [2] [6]
+
+**Arabic, i18n and RTL.** The application supports multi-language operation in its stated architecture and release material documents Spanish translation work, while its 3.9.4 docs include Venezuelan localization. No primary evidence was found establishing an Arabic translation level or right-to-left/bidi interface behavior. Translation files alone would not establish layout behavior; Arabic transaction, forms, reports, mixed-script and bidi tests are required. Score this area conservatively but not as a claim of zero capability. [2] [7]
+
+**Risks and conditional recommendation.** Main risks are old last published release, divergence between active development and release evidence, absent security policy, unknown current dependency/advisory exposure, aging deployment recipes, uncertain upgrade/support policy, jurisdiction-specific payroll/tax scope, and unverified Arabic/RTL. Recommendation: **reference_only** for lineage/product and module study at present; reconsider **evaluate** only if the team can build/deploy the exact current develop commit reproducibly, demonstrate required processes and supported upgrade path, establish security ownership/scanning and patch response, complete GPL legal review, and pass Arabic RTL plus country-specific finance/payroll tests. No certification, legal clearance, security assurance or commercial reuse is implied. [2] [3] [9] [10]
+
+**Rubric score (provisional, So7ob-relative; weighted points, maxima exactly 20/15/15/15/10/10/5/5/5).**
+- Feature completeness and domain fit: **15/20** (core breadth is real; process/jurisdiction fit needs validation).
+- Architecture and reuse quality: **10/15** (modular packages and extension capability, but legacy stack/coupling and current migration evidence uncertain).
+- Development activity and maintenance: **7/15** (recent development-branch push, but latest release 2023 and no demonstrated current support branch).
+- Security and dependency quality: **5/15** (some historical remediation/testing; no SECURITY.md and present dependency posture unknown).
+- Documentation and testing: **7/10** (official docs and reported CI/tests, with old documentation and no independent test run).
+- License clarity and suitability: **6/10** (GPL-2.0 clear at repo root; intended commercial/distribution compatibility not adjudicated).
+- Setup and deployment: **3/5** (Docker path available but dated and explicitly educational; production parameters require work).
+- Integrations and APIs: **3/5** (web services and named integrations documented; contract currency/coverage unknown).
+- i18n, Arabic and RTL: **2/5** (multilingual architecture signals, but Arabic and RTL behavior unverified).
+
+**Score midpoint: 58/100. Plausible score range: 46–70**, allowing for unknown present-day security/dependencies, current development maturity, ERP process fit, deployability and localization. Missing evidence is uncertainty, not automatically zero. Confidence: **medium** on identity, license and release/activity evidence; **low-to-medium** overall because no build, test, dependency scan or RTL runtime verification was performed.
+
+## References
+[1]: https://github.com/adempiere/adempiere "Canonical ADempiere repository"
+[2]: https://github.com/adempiere/adempiere/releases "ADempiere releases and 3.9.4 release notes"
+[3]: https://github.com/adempiere/adempiere/commits/master/ "ADempiere commit history"
+[4]: https://github.com/adempiere/adempiere/blob/master/LICENSE "Canonical repository LICENSE (GNU GPL v2)"
+[5]: https://www.adempiere.io/about/ "Official ADempiere history and license page"
+[6]: https://www.adempiere.io/product/business-process.html "Official ADempiere business process overview"
+[7]: https://adempiere.github.io/docs/ "ADempiere 3.9.4 official documentation"
+[8]: https://api.github.com/repos/adempiere/adempiere "GitHub repository metadata and source tree"
+[9]: https://github.com/adempiere/adempiere/security "Canonical repository security page"
+[10]: https://www.adempiere.io/docs/system-administration/install-adempiere-easily-with-docker.html "Official Docker installation guide"
+[11]: https://github.com/adempiere/adempiere-docker "Official ADempiere Docker repository"
